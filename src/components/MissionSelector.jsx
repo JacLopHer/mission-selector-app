@@ -1,27 +1,29 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { missions } from '../utils/missions';
+import MissionContext from '../MissionContext';
 
-const MissionSelector = ({ onSelectMission }) => {
+const MissionSelector = () => {
+  const {selectedTournamentType, setSelectedMission} = useContext(MissionContext);
   const navigate = useNavigate();
-
+  const possibleMissions = missions(selectedTournamentType)
   const handleSelectMission = (mission) => {
-    onSelectMission(mission);
+    setSelectedMission(mission);
     navigate('/select-map');
   };
 
   const handleRandomSelect = () => {
-    const randomMission = missions[Math.floor(Math.random() * missions.length)];
+    const randomMission = possibleMissions[Math.floor(Math.random() * missions.length)];
     handleSelectMission(randomMission);
   };
-
+  
   return (
     <div>
       <h2>Select a Mission Round</h2>
       <ul>
-        {missions.map((mission, index) => (
+        {possibleMissions.map((mission, index) => (
           <li key={index} onClick={() => handleSelectMission(mission)}>
-            {mission.round}
+            {mission.primaryMission} | {mission.deployment} | {mission.missionRule}
           </li>
         ))}
       </ul>

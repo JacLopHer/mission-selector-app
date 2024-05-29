@@ -1,4 +1,6 @@
-export const missions = [
+export const missions = (tournamentType) => tournamentType === "Teams" ? teamMissions : warmasterMissions;
+
+const teamMissions = [
     {
       round: 1,
       primaryMission: "Supply drop",
@@ -9,7 +11,7 @@ export const missions = [
       round: 2,
       primaryMission: "The Ritual",
       missionRule: "Chilling Rain",
-      deployment: "Crucible of battle",
+      deployment: "Crucible of Battle",
     },
     {
       round: 3,
@@ -27,7 +29,7 @@ export const missions = [
       round: 5,
       primaryMission: "Vital Ground",
       missionRule: "Chilling Rain",
-      deployment: "Crucible of battle",
+      deployment: "Crucible of Battle",
     },
     {
       round: 6,
@@ -41,5 +43,13 @@ export const missions = [
       missionRule: "Chilling Rain",
       deployment: "Search & Destroy",
     },
-  ];
-  
+];
+
+const warmasterMissions = [
+  {
+    round: 1,
+    primaryMission: "Supply drop",
+    missionRule: "Chilling Rain",
+    deployment: "Hammer & Anvil",
+  }
+]

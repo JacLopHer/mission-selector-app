@@ -1,16 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
+import MissionContext from '../MissionContext';
+import { maps } from '../utils/maps';
 
-const maps = ["Map 1", "Map 2", "Map 3", "Map 4", "Map 5", "Map 6", "Map 7", "Map 8"];
-
-const MapSelector = ({ onSelectMap }) => {
+const MapSelector = () => {
   const navigate = useNavigate();
-
+  const {selectedMission, setSelectedMap} = useContext(MissionContext);
   const handleSelectMap = (map) => {
-    onSelectMap(map);
+    setSelectedMap(map);
     navigate('/mission-details');
   };
-
   const handleRandomSelect = () => {
     const randomMap = maps[Math.floor(Math.random() * maps.length)];
     handleSelectMap(randomMap);
@@ -20,9 +19,9 @@ const MapSelector = ({ onSelectMap }) => {
     <div>
       <h2>Select a Map</h2>
       <ul>
-        {maps.map((map, index) => (
+        {maps(selectedMission).map((map, index) => (
           <li key={index} onClick={() => handleSelectMap(map)}>
-            {map}
+            {map.type} | {map.number} | {map.img}
           </li>
         ))}
       </ul>
