@@ -23,7 +23,7 @@ const MapSelector = () => {
       <ul>
         {maps(selectedMission).map((map, index) => (
           <li key={index} onClick={() => handleSelectMap(map)}>
-            {map.type} | {map.number} | {map.img}
+            {map.type} | {map.number}
           </li>
         ))}
       </ul>

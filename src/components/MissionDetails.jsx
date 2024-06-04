@@ -21,7 +21,7 @@ const MissionDetails = () => {
         <CardMedia
           component="img"
           height="150"
-          image={selectedMap.image}
+          image={'../media/hammer/23_ha.png'}
           alt={selectedMap.name}
         />
         <CardContent>
