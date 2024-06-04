@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { missions } from '../utils/missions';
 import MissionContext from '../MissionContext';
+import { List, ListItem, ListItemText, Typography, Button, Divider } from '@mui/material';
 
 const MissionSelector = () => {
   const {selectedTournamentType, setSelectedMission} = useContext(MissionContext);
@@ -19,15 +20,21 @@ const MissionSelector = () => {
   
   return (
     <div>
-      <h2>Select a Mission Round</h2>
-      <ul>
+      <Typography variant="h4" gutterBottom>Select a Mission Round</Typography>
+      <Button variant="contained" color="primary" onClick={handleRandomSelect} fullWidth>
+        Select Random Mission Round
+      </Button>
+      <List>
         {possibleMissions.map((mission, index) => (
-          <li key={index} onClick={() => handleSelectMission(mission)}>
-            {mission.primaryMission} | {mission.deployment} | {mission.missionRule}
-          </li>
+          <>
+            <ListItem style={{border: '0.1px solid #000'}} key={index} onClick={() => handleSelectMission(mission)}>
+              <ListItemText primary={`${mission.primaryMission} - ${mission.deployment} ${mission.missionRule !== "Chilling Rain" ? "-" + mission.missionRule : ""}`} />
+            </ListItem>
+            <Divider variant="middle" component="li" />
+          </>
         ))}
-      </ul>
-      <button onClick={handleRandomSelect}>Select Random Mission Round</button>
+      </List>
+      <Button variant="contained" color="primary" onClick={() => navigate(-1)}>Go Back</Button>
     </div>
   );
 };
