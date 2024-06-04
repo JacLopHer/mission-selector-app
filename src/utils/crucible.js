@@ -1,43 +1,51 @@
 export const crucibleOfBattleMaps = [
-    {
+    { 
+        table: 1,        
         type: "Heavy",
-        number: 1,
-        img: 'hola.png'
+        number: 18,
+        image: '/media/crucible/18_cb.png'
     },
-    {
+    { 
+        table: 2,
         type: "Heavy",
-        number: 3,
-        img: 'hola.png'
+        number: 26,
+        image: '/media/crucible/26_cb.png'
     },
-    {
-        type: "Medium",
-        number: 8,
-        img: 'hola.png'
-    },
-    {
+    { 
+        table: 3,
         type: "Medium",
         number: 2,
-        img: 'hola.png'
+        image: '/media/crucible/2_cb.png'
     },
-    {
+    { 
+        table: 4,
         type: "Medium",
-        number: 4,
-        img: 'hola.png'
+        number: 10,
+        image: '/media/crucible/10_cb.png'
     },
-    {
+    { 
+        table: 5,
         type: "Medium",
-        number: 5,
-        img: 'hola.png'
+        number: 10,
+        image: '/media/crucible/10_cb.png'
     },
-    {
-        type: "Light",
-        number: 6,
-        img: 'hola.png'
+    { 
+        table: 6,
+        type: "Medium",
+        number: 14,
+        image: '/media/crucible/14_cb.png'
     },
-    {
+    { 
+        table: 7,
         type: "Light",
-        number: 7,
-        img: 'hola.png'
+        number: 34,
+        image: '/media/crucible/34_cb.png'
+    },
+    { 
+        table: 8,
+        type: "Light",
+        number: 42,
+        image: '/media/crucible/42_cb.png'
     }
     
 ] 
