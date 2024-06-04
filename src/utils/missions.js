@@ -62,7 +62,7 @@ const warmasterMissions = [
     round: 3,
     primaryMission: "The Ritual",
     missionRule: "Scrambler Fields",
-    deployment: "Sweeping engagement",
+    deployment: "Sweeping Engagement",
   },
   {
     round: 4,

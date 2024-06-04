@@ -29,7 +29,7 @@ const MissionDetails = () => {
       <Card sx={{ marginTop: 2 }}>
         <CardMedia
           component="img"
-          height="150"
+          height="100%"
           image={selectedMap.image}
           alt={selectedMap.name}
           onClick={handleClickOpen}
