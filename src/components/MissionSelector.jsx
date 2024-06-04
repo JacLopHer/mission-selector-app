@@ -28,7 +28,7 @@ const MissionSelector = () => {
         {possibleMissions.map((mission, index) => (
           <>
             <ListItem style={{border: '0.1px solid #000'}} key={index} onClick={() => handleSelectMission(mission)}>
-              <ListItemText primary={`${mission.primaryMission} - ${mission.deployment} ${mission.missionRule !== "Chilling Rain" ? "-" + mission.missionRule : ""}`} />
+              <ListItemText key={index} primary={`${mission.primaryMission} - ${mission.deployment} ${mission.missionRule !== "Chilling Rain" ? "-" + mission.missionRule : ""}`} />
             </ListItem>
             <Divider variant="middle" component="li" />
           </>
