@@ -17,10 +17,10 @@ const App = () => {
       <Container maxWidth="sm">
         <Router>
           <Routes>
-            <Route path="/" element={<TournamentModeSelector />} />
-            <Route path="/select-mission" element={<MissionSelector />} />
-            <Route path="/select-map" element={<MapSelector />} />
-            <Route path="/mission-details" element={<MissionDetails />} />
+            <Route path="/mission-selector-app/" element={<TournamentModeSelector />} />
+            <Route path="/select-mission/" element={<MissionSelector />} />
+            <Route path="/select-map/" element={<MapSelector />} />
+            <Route path="/mission-details/" element={<MissionDetails />} />
           </Routes>
         </Router>
       </Container>
