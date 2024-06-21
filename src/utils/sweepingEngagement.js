@@ -1,6 +1,13 @@
 export const sweepingEngagementMaps = [
     { 
         table: 1,
+        type: "Medium",
+        number: 57,
+        image: '/media/sweeping/57_se.png'
+    }
+   /*
+    { 
+        table: 1,
         type: "Heavy",
         number: 20,
         image: '/media/sweeping/20_se.png'
@@ -46,6 +53,5 @@ export const sweepingEngagementMaps = [
         type: "Light",
         number: 40,
         image: '/media/sweeping/40_se.png'
-    }
-    
+    }*/
 ]

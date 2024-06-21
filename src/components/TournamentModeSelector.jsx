@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import { useNavigate } from 'react-router-dom';
 import { tournamentTypes } from '../utils/tournamentTypes';
 import MissionContext from '../MissionContext';
-import { List, ListItem, ListItemText, Typography } from '@mui/material';
+import { List, ListItem, ListItemText, Typography, Divider } from '@mui/material';
 
 
 const TournamentModeSelector = () => {
@@ -18,9 +18,12 @@ const TournamentModeSelector = () => {
         <Typography variant="h4" gutterBottom>Tournament type</Typography>
         <List>
             {tournamentTypes.map((type, index) => (
-            <ListItem key={index} onClick={() => handleSelectTournamentType(type)}>
-                <ListItemText>{type}</ListItemText>
-            </ListItem>
+            <>
+                <ListItem key={index} onClick={() => handleSelectTournamentType(type)}>
+                    <ListItemText>{type}</ListItemText>
+                </ListItem>
+                <Divider variant="middle" component="li" />
+            </>
             ))}
         </List>
     </div>

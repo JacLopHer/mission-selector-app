@@ -13,7 +13,7 @@ const MapSelector = () => {
     navigate('/mission-details');
   };
   const handleRandomSelect = () => {
-    const randomMap = possibleMaps[Math.floor(Math.random() * maps.length)];
+    const randomMap = possibleMaps[Math.floor(Math.random() * maps.length)]
     handleSelectMap(randomMap);
   };
 
@@ -33,7 +33,7 @@ const MapSelector = () => {
           </>
         ))}
       </List>
-      <Button variant="contained" color="primary" onClick={() => navigate(-1)}>Go Back</Button>
+      <Button variant="outlined" color="secondary" onClick={() => navigate(-1)} fullWidth>Go Back</Button>
     </div>
   );
 };

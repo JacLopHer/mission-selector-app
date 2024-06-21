@@ -34,7 +34,7 @@ const MissionSelector = () => {
           </>
         ))}
       </List>
-      <Button variant="contained" color="primary" onClick={() => navigate(-1)}>Go Back</Button>
+      <Button variant="outlined" color="secondary" onClick={() => navigate(-1)} fullWidth>Go Back</Button>
     </div>
   );
 };

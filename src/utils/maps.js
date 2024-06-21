@@ -2,6 +2,7 @@ import { crucibleOfBattleMaps } from "./crucible";
 import { hammerAndAnvilMaps } from "./hammerAndAnvil";
 import { searchAndDestroyMaps } from "./searchAndDestroy";
 import { sweepingEngagementMaps } from "./sweepingEngagement";
+import { tippingPointMaps } from "./tippingPoint";
 
 export const maps =  ({deployment}) => {
     switch (deployment) {
@@ -12,7 +13,9 @@ export const maps =  ({deployment}) => {
         case 'Crucible of Battle':
             return crucibleOfBattleMaps;
         case 'Sweeping Engagement':
-            return sweepingEngagementMaps;    
+            return sweepingEngagementMaps;
+        case 'Tipping Point':
+            return tippingPointMaps;    
         default:
             return [];
     }
