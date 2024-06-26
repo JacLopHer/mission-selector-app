@@ -45,7 +45,7 @@ export const tippingPointMaps = [
         table: 8,
         type: "Light",
         number: 56,
-        image: './mission-selector-app/media/tipping/47_tp.png'
+        image: './mission-selector-app/media/tipping/56_tp.png'
     }
     
 ]
