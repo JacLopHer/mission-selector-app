@@ -14,7 +14,7 @@ const MissionSelector = () => {
   };
 
   const handleRandomSelect = () => {
-    const randomMission = possibleMissions[Math.floor(Math.random() * missions.length)];
+    const randomMission = possibleMissions[Math.floor(Math.random() * possibleMissions.length)];
     handleSelectMission(randomMission);
   };
   
