@@ -8,15 +8,20 @@ const MapSelector = () => {
   const navigate = useNavigate();
   const {selectedMission, setSelectedMap} = useContext(MissionContext);
   const possibleMaps = maps(selectedMission)
+  console.log(possibleMaps)
   const handleSelectMap = (map) => {
     setSelectedMap(map);
     navigate('/mission-details');
   };
   const handleRandomSelect = () => {
-    const randomMap = possibleMaps[Math.floor(Math.random() * maps.length)]
+    const randomMap = possibleMaps[Math.floor(Math.random() * possibleMaps.length)]
     handleSelectMap(randomMap);
   };
 
+  const handleGoBack = () => {
+    setSelectedMap(null)
+    navigate(-1)
+  }
   return (
     <div>
       <Typography variant="h4" gutterBottom>Select a Map</Typography>
@@ -33,7 +38,7 @@ const MapSelector = () => {
           </>
         ))}
       </List>
-      <Button variant="outlined" color="secondary" onClick={() => navigate(-1)} fullWidth>Go Back</Button>
+      <Button variant="outlined" color="secondary" onClick={() => handleGoBack()} fullWidth>Go Back</Button>
     </div>
   );
 };
