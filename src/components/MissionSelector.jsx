@@ -2,7 +2,8 @@ import React, {useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { missions } from '../utils/missions';
 import MissionContext from '../MissionContext';
-import { List, ListItem, Typography, Button} from '@mui/material';
+import { List, ListItem, Button} from '@mui/material';
+import { StyledContainer, StyledTitle } from './StyledTitle';
 
 const MissionSelector = () => {
   const {selectedTournamentType, setSelectedMission} = useContext(MissionContext);
@@ -20,7 +21,9 @@ const MissionSelector = () => {
   
   return (
     <>
-      <Typography variant="h4" gutterBottom textAlign={'center'}>Select a Mission Round</Typography>
+      <StyledContainer>
+            <StyledTitle variant="h4">Select Round</StyledTitle>
+        </StyledContainer>
       <Button variant="contained" color="primary" onClick={handleRandomSelect} fullWidth>
         Select Random Mission Round
       </Button>

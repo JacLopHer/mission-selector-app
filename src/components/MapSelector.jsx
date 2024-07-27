@@ -2,7 +2,8 @@ import React, {useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import MissionContext from '../MissionContext';
 import { maps } from '../utils/maps';
-import {Typography, Button, Grid } from '@mui/material';
+import {Button, Grid } from '@mui/material';
+import { StyledContainer, StyledTitle } from './StyledTitle';
 
 const MapSelector = () => {
   const navigate = useNavigate();
@@ -23,7 +24,9 @@ const MapSelector = () => {
   }
   return (
     <div>
-      <Typography variant="h4" gutterBottom textAlign={'center'}>Select a Map</Typography>
+      <StyledContainer>
+            <StyledTitle variant="h4">Select Map</StyledTitle>
+        </StyledContainer>
       <Button variant="contained" color="primary" onClick={handleRandomSelect} fullWidth style={{marginBottom:'1rem'}}>
         	Select Random Map
       </Button>

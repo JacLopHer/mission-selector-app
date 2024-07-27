@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import MissionContext from '../MissionContext';
 import { useNavigate } from 'react-router-dom';
 import { Typography, Button, Card, CardMedia, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper } from '@mui/material';
+import { StyledContainer, StyledTitle } from './StyledTitle';
 
 const MissionDetails = () => {
   const { selectedMission, selectedMap } = useContext(MissionContext);
@@ -20,7 +21,9 @@ const MissionDetails = () => {
 
   return (
     <div>
-      <Typography variant="h4" gutterBottom textAlign={'center'}>Mission Details</Typography>
+      <StyledContainer>
+          <StyledTitle variant="h4">Mission Details</StyledTitle>
+      </StyledContainer>
       <Typography variant="body1"><strong>Mission Round:</strong> {selectedMission.round}</Typography>
       <Typography variant="body1"><strong>Primary Mission:</strong> {selectedMission.primaryMission}</Typography>
       <Typography variant="body1"><strong>Mission Rule:</strong> {selectedMission.missionRule}</Typography>
