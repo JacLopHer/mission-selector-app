@@ -1,7 +1,7 @@
 {
   "name": "mission-selector-app",
   "version": "0.1.0",
-  "homepage": "http://www.wtcmissionselector.es",
+  "homepage": "https://JacLopHer.github.io/mission-selector-app/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
