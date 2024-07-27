@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.73ea95c4.css",
-    "main.js": "/static/js/main.ae98a436.js",
-    "static/js/453.6a0655f2.chunk.js": "/static/js/453.6a0655f2.chunk.js",
-    "index.html": "/index.html",
-    "main.73ea95c4.css.map": "/static/css/main.73ea95c4.css.map",
-    "main.ae98a436.js.map": "/static/js/main.ae98a436.js.map",
-    "453.6a0655f2.chunk.js.map": "/static/js/453.6a0655f2.chunk.js.map"
+    "main.css": "/mission-selector-app/static/css/main.73ea95c4.css",
+    "main.js": "/mission-selector-app/static/js/main.44ef8fe4.js",
+    "static/js/453.6a0655f2.chunk.js": "/mission-selector-app/static/js/453.6a0655f2.chunk.js",
+    "index.html": "/mission-selector-app/index.html",
+    "main.73ea95c4.css.map": "/mission-selector-app/static/css/main.73ea95c4.css.map",
+    "main.44ef8fe4.js.map": "/mission-selector-app/static/js/main.44ef8fe4.js.map",
+    "453.6a0655f2.chunk.js.map": "/mission-selector-app/static/js/453.6a0655f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73ea95c4.css",
-    "static/js/main.ae98a436.js"
+    "static/js/main.44ef8fe4.js"
   ]
 }
