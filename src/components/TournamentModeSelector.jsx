@@ -15,7 +15,7 @@ const TournamentModeSelector = () => {
   };
   return (
     <div>
-        <Typography variant="h4" gutterBottom textAlign={'center'}>Tournament type</Typography>
+        <Typography  gutterBottom textAlign={'center'} variant='h4'>Tournament type</Typography>
         <List>
             {tournamentTypes.map((type, index) => (
             <ListItem key={index}>

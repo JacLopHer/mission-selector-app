@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import MissionContext from '../MissionContext';
 import { useNavigate } from 'react-router-dom';
-import { Typography, Button, Card, CardMedia, CardContent, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper } from '@mui/material';
+import { Typography, Button, Card, CardMedia, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper } from '@mui/material';
 
 const MissionDetails = () => {
   const { selectedMission, selectedMap } = useContext(MissionContext);

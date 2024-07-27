@@ -8,6 +8,20 @@ import { MissionProvider } from './MissionContext';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import './styles/styles.css'
+import { createTheme } from '@mui/material';
+
+export const theme = createTheme({
+  palette: {
+    tomato: '#FF6347',
+    pink: {
+      deep: '#FF1493',
+      hot: '#FF69B4',
+      medium: '#C71585',
+      pale: '#DB7093',
+      light: '#FFB6C1',
+    },
+  },
+});
 
 const App = () => {
   
