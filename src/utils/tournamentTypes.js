@@ -1,1 +1,1 @@
-export const tournamentTypes = ["Teams", "Warmaster"]
+export const tournamentTypes = ["Teams", "Warmaster", "Freak Wars"]
