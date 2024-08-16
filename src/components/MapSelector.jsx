@@ -8,7 +8,7 @@ import { StyledContainer, StyledTitle } from './StyledTitle';
 const MapSelector = () => {
   const navigate = useNavigate();
   const {selectedMission, setSelectedMap, selectedTournamentType} = useContext(MissionContext);
-  const possibleMaps = maps(selectedMission,  selectedTournamentType)
+  const possibleMaps = maps(selectedMission,  selectedTournamentType);
   const handleSelectMap = (map) => {
     setSelectedMap(map);
     navigate('/mission-details');

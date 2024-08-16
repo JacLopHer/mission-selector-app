@@ -1,31 +1,30 @@
-import { freakWars } from "../constants/constants";
-import { crucibleOfBattleMaps } from "./crucible";
-import { hammerAndAnvilMaps } from "./hammerAndAnvil";
-import { searchAndDestroyMaps } from "./searchAndDestroy";
-import { sweepingEngagementMaps } from "./sweepingEngagement";
-import { tippingPointMaps } from "./tippingPoint";
+import { crucibleOfBatle, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, tippingPoint } from "../constants/constants";
+import { crucibleOfBattleMaps } from "./maps/crucible";
+import { hammerAndAnvilMaps } from "./maps/hammerAndAnvil";
+import { searchAndDestroyMaps } from "./maps/searchAndDestroy";
+import { sweepingEngagementMaps } from "./maps/sweepingEngagement";
+import { tippingPointMaps } from "./maps/tippingPoint";
 
 export const maps =  ({deployment}, selectedTournamentType) => {
-    
     let maps = getMapsForDeployment(deployment)
-    
+
     if(selectedTournamentType === freakWars){
         return maps.filter((map) => map.table === 5 | map.table === 3 ? false : true)
     }   
     return maps;
 } 
 
-const getMapsForDeployment = ({deployment}) => {
+const getMapsForDeployment = (deployment) => {
     switch (deployment) {
-        case 'Search & Destroy':
+        case searchAndDestroy:
             return searchAndDestroyMaps;
-        case 'Hammer & Anvil':
+        case hammerAndAnvil:
             return hammerAndAnvilMaps;
-        case 'Crucible of Battle':
+        case crucibleOfBatle:
             return crucibleOfBattleMaps;
-        case 'Sweeping Engagement':
+        case sweepingEngagement:
             return sweepingEngagementMaps;
-        case 'Tipping Point':
+        case tippingPoint:
             return tippingPointMaps;    
         default:
             return [];

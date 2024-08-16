@@ -5,6 +5,7 @@ export const sweepingEngagementMaps = [
         number: 57,
         image: './mission-selector-app/media/sweeping/57_se.png'
     }
+    //Only one map for warmaster
    /*
     { 
         table: 1,
