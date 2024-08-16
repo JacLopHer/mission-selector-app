@@ -4,21 +4,34 @@ import { searchAndDestroyMaps } from "./searchAndDestroy";
 import { sweepingEngagementMaps } from "./sweepingEngagement";
 import { tippingPointMaps } from "./tippingPoint";
 
-export const maps =  ({deployment}) => {
+export const maps =  ({deployment}, selectedTournamentType) => {
+    
+    let maps;
     switch (deployment) {
         case 'Search & Destroy':
-            return searchAndDestroyMaps;
+            maps = searchAndDestroyMaps;
+            break;
         case 'Hammer & Anvil':
-            return hammerAndAnvilMaps;
+            maps = hammerAndAnvilMaps;
+            break;
         case 'Crucible of Battle':
-            return crucibleOfBattleMaps;
+            maps = crucibleOfBattleMaps;
+            break;
         case 'Sweeping Engagement':
-            return sweepingEngagementMaps;
+            maps = sweepingEngagementMaps;
+            break;
         case 'Tipping Point':
-            return tippingPointMaps;    
+            maps = tippingPointMaps;
+            break;    
         default:
-            return [];
+            maps = [];
     }
+    if(selectedTournamentType === "Freak Wars"){
+        maps = maps.filter((map) => map.table === 5 | map.table === 3 ? false : true)
+        console.log(maps)
+        return maps.filter((map) => map.table === 5 | map.table === 3 ? false : true)
+    }   
+    return maps;
 } 
 
 

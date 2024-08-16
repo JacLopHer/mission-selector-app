@@ -2,7 +2,7 @@ export const missions = (tournamentType) => {
   switch(tournamentType){
     case "Teams":
       return teamMissions;
-    case "FreakWars":
+    case "Freak Wars":
       return freakWarsMissions;
     default:
       return warmasterMissions;
@@ -12,15 +12,15 @@ export const missions = (tournamentType) => {
 const freakWarsMissions =  [
   {
     round: 1,
-    primaryMission: "Supply drop",
-    missionRule: "Smoke and Mirrors",
-    deployment: "Hammer & Anvil",
+    primaryMission: "Linchpin",
+    missionRule: "Raise Banners",
+    deployment: "Search & Destroy",
   },
   {
     round: 2,
-    primaryMission: "Linchpin",
-    missionRule: "Fog of War",
-    deployment: "Tipping Point",
+    primaryMission: "Take and Hold",
+    missionRule: "Hidden Supplies",
+    deployment: "Search & Destroy",
   },
   {
     round: 3,
@@ -30,24 +30,12 @@ const freakWarsMissions =  [
   },
   {
     round: 4,
-    primaryMission: "Linchpin",
-    missionRule: "Raise Banners",
-    deployment: "Search & Destroy",
-  },
-  {
-    round: 5,
-    primaryMission: "Take and Hold",
-    missionRule: "Hidden Supplies",
-    deployment: "Search & Destroy",
-  },
-  {
-    round: 6,
     primaryMission: "The Ritual",
     missionRule: "Swift Action",
     deployment: "Crucible of Battle",
   },
   {
-    round: 7,
+    round: 5,
     primaryMission: "Scorched Earth",
     missionRule: "Inspired Leadership",
     deployment: "Crucible of Battle",
