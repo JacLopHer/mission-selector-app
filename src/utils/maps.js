@@ -27,8 +27,6 @@ export const maps =  ({deployment}, selectedTournamentType) => {
             maps = [];
     }
     if(selectedTournamentType === "Freak Wars"){
-        maps = maps.filter((map) => map.table === 5 | map.table === 3 ? false : true)
-        console.log(maps)
         return maps.filter((map) => map.table === 5 | map.table === 3 ? false : true)
     }   
     return maps;
