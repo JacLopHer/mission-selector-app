@@ -1,1 +1,3 @@
-export const tournamentTypes = ["Teams", "Warmaster", "Freak Wars"]
+import { freakWars, teams, warmaster } from "../constants/constants";
+
+export const tournamentTypes = [teams, warmaster, freakWars]

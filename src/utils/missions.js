@@ -1,8 +1,11 @@
+
+import { teams, freakWars } from './../constants/constants';
+
 export const missions = (tournamentType) => {
   switch(tournamentType){
-    case "Teams":
+    case teams:
       return teamMissions;
-    case "Freak Wars":
+    case freakWars:
       return freakWarsMissions;
     default:
       return warmasterMissions;
