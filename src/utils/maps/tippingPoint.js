@@ -14,14 +14,14 @@ export const tippingPointMaps = [
     {   
         table: 3,
         type: "Medium",
-        number: 52,
-        image: './mission-selector-app/media/tipping/52_tp.png'
+        number: 51,
+        image: './mission-selector-app/media/tipping/51_tp.png'
     },
     {   
         table: 4,
         type: "Medium",
-        number: 54,
-        image: './mission-selector-app/media/tipping/54_tp.png'
+        number: 52,
+        image: './mission-selector-app/media/tipping/52_tp.png'
     },
     {   
         table: 5,
