@@ -2,6 +2,7 @@
 export const freakWars = "Freak Wars";
 export const warmaster = "Warmaster";
 export const teams = "Teams";
+export const assemble2025= "Assemble 2025"
 
 //deployments
 export const searchAndDestroy = "Search & Destroy";

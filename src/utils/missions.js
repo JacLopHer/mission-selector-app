@@ -1,5 +1,5 @@
 
-import { teams, freakWars } from './../constants/constants';
+import { teams, freakWars, assemble2025 } from './../constants/constants';
 
 export const missions = (tournamentType) => {
   switch(tournamentType){
@@ -7,10 +7,46 @@ export const missions = (tournamentType) => {
       return teamMissions;
     case freakWars:
       return freakWarsMissions;
+    case assemble2025:
+      return assemble2025Missions;
     default:
       return warmasterMissions;
   }  
 } 
+
+
+const assemble2025Missions = [
+  {
+    round: 1,
+    primaryMission: "The Ritual",
+    missionRule: "Swift Action",
+    deployment: "Crucible of Battle",
+  },
+  {
+    round: 2,
+    primaryMission: "Terraform",
+    missionRule: "Stalwarts",
+    deployment: "Crucible of Battle",
+  },
+  {
+    round: 3,
+    primaryMission: "Linchpin",
+    missionRule: "Fog of War",
+    deployment: "Tipping Point",
+  },
+  {
+    round: 4,
+    primaryMission: "Take and Hold",
+    missionRule: "Hidden Supplies",
+    deployment: "Search & Destroy",
+  },
+  {
+    round: 5,
+    primaryMission: "Burden of Trust",
+    missionRule: "Prepared positions",
+    deployment: "Search & Destroy",
+  },
+];
 
 const freakWarsMissions =  [
   {
