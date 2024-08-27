@@ -9,7 +9,7 @@ export const maps =  ({deployment}, selectedTournamentType) => {
     let maps = getMapsForDeployment(deployment)
     switch(selectedTournamentType){
         case freakWars:
-            return maps.filter((map) => map.table === 5 | map.table === 3 ? false : true);
+            return filterMaps(maps,3,5);
         case assemble2025:
             return getMapsForAssemblePerDeployment(deployment, maps);
         default:
@@ -18,13 +18,8 @@ export const maps =  ({deployment}, selectedTournamentType) => {
 } 
 
 //Only for the assemble tournament
-const getMapsForAssemblePerDeployment = (deployment, maps) => {
-    console.log(deployment)
-    if(deployment === crucibleOfBatle){
-        return maps.filter((map) => map.table === 1 | map.table === 8 ? false : true);
-    }
-    return maps.filter((map) => map.table === 2 | map.table === 7 ? false : true);
-}
+const getMapsForAssemblePerDeployment = (deployment, maps) => deployment === crucibleOfBatle ? filterMaps(maps,1,8) : filterMaps(maps,2,7);
+
 
 const getMapsForDeployment = (deployment) => {
     switch (deployment) {
@@ -43,6 +38,8 @@ const getMapsForDeployment = (deployment) => {
     }
 }
 
+//filters the 2 maps decided by the organization for 6man teams
+const filterMaps = (maps,map1, map2) => maps.filter((map) => map.table === map1 | map.table === map2 ? false : true);
 
 
 
