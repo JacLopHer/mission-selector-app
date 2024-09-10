@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import MissionContext from '../MissionContext';
 import { maps } from '../utils/maps';
-import {Button, Grid } from '@mui/material';
+import {Button, Checkbox, Grid } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
 
 const MapSelector = () => {
@@ -34,6 +34,7 @@ const MapSelector = () => {
         {possibleMaps.map((map, index) => (
           <Grid item key={index} xs={6}>
              <StyledTitle variant="h7" onClick={() =>  handleSelectMap(map)}>Table {++index}</StyledTitle>
+             <Checkbox  style={{marginLeft:'50%'}}/>
               <img
                 src={map.image}
                 alt={map.name}
