@@ -33,6 +33,7 @@ const MapSelector = () => {
       <Grid container>
         {possibleMaps.map((map, index) => (
           <Grid item key={index} xs={6}>
+             <StyledTitle variant="h7" onClick={() =>  handleSelectMap(map)}>Table {map.table}</StyledTitle>
               <img
                 src={map.image}
                 alt={map.name}
