@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { StyledTitle } from "./StyledTitle";
 
 const style = {width: '100%', height: 'auto' };
-const greyedStyle = {width: '100%', height: 'auto', filter:'grayscale(100%)' }
+const greyedStyle = {width: '100%', height: 'auto', filter:'blur(5px)' }
 
 
 export const MapItem = ({map, index, handleSelectMap}) => {
@@ -16,8 +16,7 @@ export const MapItem = ({map, index, handleSelectMap}) => {
     return  (
         <Grid item key={index} xs={6}>
             <StyledTitle variant="h7" onClick={() =>  handleSelectMap(map)}>Table {++index}</StyledTitle>
-            <Checkbox  
-                style={{marginLeft:'50%'}} 
+            <Checkbox 
                 onChange={handleChange}
                 checked={checked}
                 inputProps={{ 'aria-label': 'controlled' }}    
