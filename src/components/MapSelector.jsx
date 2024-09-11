@@ -2,8 +2,9 @@ import React, {useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import MissionContext from '../MissionContext';
 import { maps } from '../utils/maps';
-import {Button, Checkbox, Grid } from '@mui/material';
+import {Button, Grid } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
+import { MapItem } from './MapItem';
 
 const MapSelector = () => {
   const navigate = useNavigate();
@@ -17,7 +18,6 @@ const MapSelector = () => {
     const randomMap = possibleMaps[Math.floor(Math.random() * possibleMaps.length)]
     handleSelectMap(randomMap);
   };
-
   const handleGoBack = () => {
     setSelectedMap(null)
     navigate(-1)
@@ -32,16 +32,7 @@ const MapSelector = () => {
       </Button>
       <Grid container>
         {possibleMaps.map((map, index) => (
-          <Grid item key={index} xs={6}>
-             <StyledTitle variant="h7" onClick={() =>  handleSelectMap(map)}>Table {++index}</StyledTitle>
-             <Checkbox  style={{marginLeft:'50%'}}/>
-              <img
-                src={map.image}
-                alt={map.name}
-                style={{ width: '100%', height: 'auto' }} 
-                onClick={() =>  handleSelectMap(map)}
-              />
-          </Grid>
+          <MapItem key={index} map={map} index={index} handleSelectMap={handleSelectMap}/>
         ))}
       </Grid>
       <Button variant="outlined" color="secondary" onClick={() => handleGoBack()} fullWidth>Go Back</Button>
