@@ -49,3 +49,42 @@ export const crucibleOfBattleMaps = [
     }
     
 ] 
+
+export const crucibleOfBattleMapsVitoria = [
+    { 
+        table: 1,
+        type: "Light",
+        number: 34,
+        image: './mission-selector-app/media/crucible/34_cb.png'
+    },
+    { 
+        table: 2,
+        type: "Light",
+        number: 38,
+        image: './mission-selector-app/media/crucible/38_cb.png'
+    },
+    { 
+        table: 3,
+        type: "Medium",
+        number: 2,
+        image: './mission-selector-app/media/crucible/2_cb.png'
+    },
+    { 
+        table: 4,
+        type: "Medium",
+        number: 6,
+        image: './mission-selector-app/media/crucible/6_cb.png'
+    },
+    { 
+        table: 5,        
+        type: "Heavy",
+        number: 18,
+        image: './mission-selector-app/media/crucible/18_cb.png'
+    },
+    { 
+        table: 6,
+        type: "Heavy",
+        number: 22,
+        image: './mission-selector-app/media/crucible/22_cb.png'
+    }
+] 

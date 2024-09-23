@@ -49,3 +49,42 @@ export const searchAndDestroyMaps = [
     }
    
 ]
+
+export const searchAndDestroyMapsVitoria = [
+    { 
+        table: 1,
+        type: "Light",
+        number: 33,
+        image: './mission-selector-app/media/search/33_sd.png'
+    },
+    { 
+        table: 2,
+        type: "Light",
+        number: 37,
+        image: './mission-selector-app/media/search/37_sd.png'
+    },
+    { 
+        table: 3,
+        type: "Medium",
+        number: 1,
+        image: './mission-selector-app/media/search/1_sd.png'
+    },
+    { 
+        table: 4,
+        type: "Medium",
+        number: 5,
+        image: './mission-selector-app/media/search/5_sd.png'
+    },
+    { 
+        table: 5,
+        type: "Heavy",
+        number: 17,
+        image: './mission-selector-app/media/search/17_sd.png'
+    },
+    { 
+        table: 6,
+        type: "Heavy",
+        number: 21,
+        image: './mission-selector-app/media/search/21_sd.png'
+    }
+]

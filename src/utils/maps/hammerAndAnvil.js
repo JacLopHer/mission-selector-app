@@ -49,3 +49,42 @@ export const hammerAndAnvilMaps = [
     }
     
 ]
+
+export const hammerAndAnvilMapsVitoria =  [
+    {   
+        table: 1,
+        type: "Light",
+        number: 35,
+        image: './mission-selector-app/media/hammer/35_ha.png'
+    },
+    {   
+        table: 2,
+        type: "Light",
+        number: 39,
+        image: './mission-selector-app/media/hammer/39_ha.png'
+    },
+    {   
+        table: 3,
+        type: "Medium",
+        number: 3,
+        image: './mission-selector-app/media/hammer/3_ha.png'
+    },
+    {   
+        table: 4,
+        type: "Medium",
+        number: 7,
+        image: './mission-selector-app/media/hammer/7_ha.png'
+    },
+    {   
+        table: 5,
+        type: "Heavy",
+        number: 19,
+        image: './mission-selector-app/media/hammer/19_ha.png'
+    },
+    {   
+        table: 6,
+        type: "Heavy",
+        number: 23,
+        image: './mission-selector-app/media/hammer/23_ha.png'
+    }
+]

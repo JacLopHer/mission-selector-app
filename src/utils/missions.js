@@ -1,10 +1,12 @@
 
-import { teams, freakWars, assemble2025 } from './../constants/constants';
+import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria } from './../constants/constants';
 
 export const missions = (tournamentType) => {
   switch(tournamentType){
     case teams:
       return teamMissions;
+    case vitoria:
+      return vitoriaMissions;
     case freakWars:
       return freakWarsMissions;
     case assemble2025:
@@ -14,6 +16,39 @@ export const missions = (tournamentType) => {
   }  
 } 
 
+
+const vitoriaMissions = [
+  {
+    round: 1,
+    primaryMission: "Terraform",
+    missionRule: "Stalwarts",
+    deployment: crucibleOfBatle,
+  },
+  {
+    round: 2,
+    primaryMission: "Purge the Foe",
+    missionRule: "Rapid Escalation",
+    deployment: crucibleOfBatle,
+  },
+  {
+    round: 3,
+    primaryMission: "Burden of Trust",
+    missionRule: "Hidden supplies",
+    deployment: hammerAndAnvil,
+  },
+  {
+    round: 4,
+    primaryMission: "Linchpin",
+    missionRule: "Raise Banners",
+    deployment: searchAndDestroy,
+  },
+  {
+    round: 5,
+    primaryMission: "Take and Hold",
+    missionRule: "Hidden Supplies",
+    deployment: searchAndDestroy,
+  }
+]
 
 const assemble2025Missions = [
   {
