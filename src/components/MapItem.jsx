@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { StyledTitle } from "./StyledTitle";
 
 const style = {width: '100%', height: 'auto' };
-const greyedStyle = {width: '100%', height: 'auto', filter:'blur(5px)' }
+const greyedStyle = {width: '100%', height: 'auto', filter:'grayscale(1)' }
 
 
 export const MapItem = ({map, index, handleSelectMap}) => {

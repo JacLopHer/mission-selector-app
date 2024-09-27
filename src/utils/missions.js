@@ -1,10 +1,12 @@
 
-import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria } from './../constants/constants';
+import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024 } from './../constants/constants';
 
 export const missions = (tournamentType) => {
   switch(tournamentType){
     case teams:
       return teamMissions;
+    case talavera2024:
+      return talaveraMissions;
     case vitoria:
       return vitoriaMissions;
     case freakWars:
