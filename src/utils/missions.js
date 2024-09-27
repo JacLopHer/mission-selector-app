@@ -17,6 +17,45 @@ export const missions = (tournamentType) => {
 } 
 
 
+const talaveraMissions = [
+  {
+    round: 1,
+    primaryMission: "Scorched Earth",
+    missionRule: "Inspired Leadership",
+    deployment: "Crucible of Battle",
+  },
+  {
+    round: 2,
+    primaryMission: "Linchpin",
+    missionRule: "Swift Action",
+    deployment: "Crucible of Battle",
+  },
+  {
+    round: 3,
+    primaryMission: "Purge the Foe",
+    missionRule: "Smoke and Mirrors",
+    deployment: "Tipping Point",
+  },
+  {
+    round: 4,
+    primaryMission: "Supply Drop",
+    missionRule: "Fog of War",
+    deployment: "Tipping Point",
+  },
+  {
+    round: 5,
+    primaryMission: "Linchpin",
+    missionRule: "Raise Banners",
+    deployment: "Search & Destroy",
+  },
+  {
+    round: 6,
+    primaryMission: "Take and Hold",
+    missionRule: "Hidden Supplies",
+    deployment: "Search & Destroy",
+  },
+  
+]
 const vitoriaMissions = [
   {
     round: 1,

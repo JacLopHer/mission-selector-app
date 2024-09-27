@@ -4,7 +4,7 @@ export const warmaster = "Warmaster";
 export const teams = "Teams";
 export const assemble2025= "Assemble 2025"
 export const vitoria = "Vitoria"
-
+export const talavera2024 = "Talavera 2024"
 //deployments
 export const searchAndDestroy = "Search & Destroy";
 export const hammerAndAnvil = 'Hammer & Anvil';
