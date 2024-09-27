@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mission-selector-app/static/css/main.73ea95c4.css",
-    "main.js": "/mission-selector-app/static/js/main.b8929b6b.js",
+    "main.js": "/mission-selector-app/static/js/main.5635135b.js",
     "static/js/453.6a0655f2.chunk.js": "/mission-selector-app/static/js/453.6a0655f2.chunk.js",
     "index.html": "/mission-selector-app/index.html",
     "main.73ea95c4.css.map": "/mission-selector-app/static/css/main.73ea95c4.css.map",
-    "main.b8929b6b.js.map": "/mission-selector-app/static/js/main.b8929b6b.js.map",
+    "main.5635135b.js.map": "/mission-selector-app/static/js/main.5635135b.js.map",
     "453.6a0655f2.chunk.js.map": "/mission-selector-app/static/js/453.6a0655f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73ea95c4.css",
-    "static/js/main.b8929b6b.js"
+    "static/js/main.5635135b.js"
   ]
 }
