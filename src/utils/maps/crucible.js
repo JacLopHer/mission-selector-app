@@ -50,6 +50,46 @@ export const crucibleOfBattleMaps = [
     
 ] 
 
+
+export const crucibleOfBattleMapsTalavera = [
+    { 
+        table: 1,        
+        type: "Heavy",
+        number: 18,
+        image: './mission-selector-app/media/crucible/18_cb.png'
+    },
+    { 
+        table: 2,
+        type: "Heavy",
+        number: 26,
+        image: './mission-selector-app/media/crucible/26_cb.png'
+    },
+    { 
+        table: 3,
+        type: "Medium",
+        number: 10,
+        image: './mission-selector-app/media/crucible/10_cb.png'
+    },
+    { 
+        table: 4,
+        type: "Medium",
+        number: 14,
+        image: './mission-selector-app/media/crucible/14_cb.png'
+    },
+    { 
+        table: 5,
+        type: "Light",
+        number: 34,
+        image: './mission-selector-app/media/crucible/34_cb.png'
+    },
+    {   
+        table: 6,
+        type: "Light",
+        number: 2,
+        image: './mission-selector-app/media/gwmaps/layout_2_pariah.png'
+    }
+]
+
 export const crucibleOfBattleMapsVitoria = [
     { 
         table: 1,

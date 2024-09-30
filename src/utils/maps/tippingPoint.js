@@ -49,3 +49,42 @@ export const tippingPointMaps = [
     }
     
 ]
+
+export const tippingPointMapsTalavera = [
+    {   
+        table: 1,
+        type: "Heavy",
+        number: 49,
+        image: './mission-selector-app/media/tipping/49_tp.png'
+    },
+    {   
+        table: 2,
+        type: "Heavy",
+        number: 50,
+        image: './mission-selector-app/media/tipping/50_tp.png'
+    },
+    {   
+        table: 3,
+        type: "Medium",
+        number: 51,
+        image: './mission-selector-app/media/tipping/51_tp.png'
+    },
+    {   
+        table: 4,
+        type: "Medium",
+        number: 52,
+        image: './mission-selector-app/media/tipping/52_tp.png'
+    },
+    {   
+        table: 5,
+        type: "Light",
+        number: 56,
+        image: './mission-selector-app/media/tipping/56_tp.png'
+    },
+    {   
+        table: 6,
+        type: "Light",
+        number: 2,
+        image: './mission-selector-app/media/gwmaps/layout_2_pariah.png'
+    }
+]
