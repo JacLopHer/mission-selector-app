@@ -30,7 +30,7 @@ const MissionSelector = () => {
         onClick={handleRandomSelect} 
         fullWidth
         style={{
-          background: 'linear-gradient(45deg, #FF5722, #FF9800)',
+          background: 'linear-gradient(45deg, #FF5722, #666699)',
           border: 'none',
           borderRadius: '8px',
           color: 'white',
@@ -50,7 +50,7 @@ const MissionSelector = () => {
               variant="contained" 
               color="info"
               style={{
-                background: 'linear-gradient(45deg, #2196F3, #21CBF3)',
+                background: 'linear-gradient(45deg, #666699, #21CBF3)',
                 border: 'none',
                 borderRadius: '8px',
                 color: 'white',
@@ -77,7 +77,7 @@ const MissionSelector = () => {
         onClick={() => navigate(-1)} 
         fullWidth
         style={{
-          background: '#BDBDBD',
+          background: 'linear-gradient(45deg, #666699, #660066)',
           border: 'none',
           borderRadius: '8px',
           color: 'white',

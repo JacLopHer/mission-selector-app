@@ -62,7 +62,16 @@ const MissionDetails = () => {
           </Button>
         </DialogActionsWrapper>
       </Dialog>
-      <Button variant="outlined" color="secondary" onClick={() => navigate(-1)} fullWidth>
+      <Button variant="outlined" color="secondary" onClick={() => navigate(-1)} fullWidth
+         style={{
+          background: 'linear-gradient(45deg, #666699, #660066)',
+          border: 'none',
+          borderRadius: '8px',
+          color: 'white',
+          padding: '10px 20px',
+          boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
+          transition: 'background 0.3s, transform 0.2s',
+        }}>
             Go Back
       </Button>
     </div>
