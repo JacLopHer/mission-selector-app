@@ -5,6 +5,7 @@ import MissionContext from '../MissionContext';
 import { Button, Typography, Grid } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
 import '../styles/MissionSelector.css'; // Asegúrate de crear este archivo CSS
+
 const MissionSelector = () => {
   const { selectedTournamentType, setSelectedMission } = useContext(MissionContext);
   const navigate = useNavigate();
@@ -29,50 +30,23 @@ const MissionSelector = () => {
         className="random-button" 
         onClick={handleRandomSelect} 
         fullWidth
-        style={{
-          background: 'linear-gradient(45deg, #FF5722, #666699)',
-          border: 'none',
-          borderRadius: '8px',
-          color: 'white',
-          padding: '10px 20px',
-          boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
-          transition: 'background 0.3s, transform 0.2s',
-          margin: '0.5rem'
-        }}
-        onMouseEnter={(e) => e.currentTarget.style.background = 'linear-gradient(45deg, #FF9800, #FF5722)'}
-        onMouseLeave={(e) => e.currentTarget.style.background = 'linear-gradient(45deg, #FF5722, #FF9800)'}
       >
         Select Random Mission Round
       </Button>
-      <Grid container alignItems="center" spacing={1} style={{display: 'flex'}}>
+      <Grid container alignItems="center" spacing={1} className="mission-grid">
         {possibleMissions.map((mission, index) => (
-          <Grid item xs={6} sm={4} key={index} >
-            
-              <Button 
-                variant="contained" 
-                color="info"
-                style={{
-                  background: 'linear-gradient(45deg, #666699, #21CBF3)',
-                  border: 'none',
-                  borderRadius: '8px',
-                  color: 'white',
-                  padding: '10px 20px',
-                  boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
-                  transition: 'background 0.3s, transform 0.2s',
-                  width: '100%',
-                  height: 175
-                }}
-                onClick={() => handleSelectMission(mission)}
-                onMouseEnter={(e) => e.currentTarget.style.background = 'linear-gradient(45deg, #21CBF3, #2196F3)'}
-                onMouseLeave={(e) => e.currentTarget.style.background = 'linear-gradient(45deg, #2196F3, #21CBF3)'}
-              >
-                <Typography variant="body1" style={{ display: 'flex', flexDirection: 'column', textAlign: 'left', fontSize: '0.70rem'}}>
-                  <span style={{ textTransform: 'uppercase', fontSize: '0.8rem', textAlign: 'center' }}><strong>{mission.primaryMission}</strong></span>
-                  <span style={{ textTransform: 'none'}}>- {mission.deployment}</span>
-                  {mission.missionRule !== "Chilling Rain" && <span style={{ textTransform: 'none' }}>- {mission.missionRule}</span>}
-                </Typography>
-              </Button>
-        
+          <Grid item xs={6} sm={4} key={index} className="mission-grid-item">
+            <Button 
+              className="mission-button" 
+              fullWidth 
+              onClick={() => handleSelectMission(mission)}
+            >
+              <Typography variant="body1" className="mission-text">
+                <span className="mission-title"><strong>{mission.primaryMission}</strong></span>
+                <span className="mission-details">{mission.deployment}</span>
+                {mission.missionRule !== "Chilling Rain" && <span className="mission-details">{mission.missionRule}</span>}
+              </Typography>
+            </Button>
           </Grid>
         ))}
       </Grid>
@@ -80,18 +54,6 @@ const MissionSelector = () => {
         className="back-button" 
         onClick={() => navigate(-1)} 
         fullWidth
-        style={{
-          background: 'linear-gradient(45deg, #666699, #660066)',
-          border: 'none',
-          borderRadius: '8px',
-          color: 'white',
-          padding: '10px 20px',
-          boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
-          transition: 'background 0.3s, transform 0.2s',
-          margin: '0.5rem'
-        }}
-        onMouseEnter={(e) => e.currentTarget.style.background = '#A0A0A0'}
-        onMouseLeave={(e) => e.currentTarget.style.background = '#BDBDBD'}
       >
         Go Back
       </Button>
