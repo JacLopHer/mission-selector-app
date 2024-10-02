@@ -34,7 +34,7 @@ const MapSelector = () => {
       <Button variant="contained" color="primary" onClick={handleRandomSelect} fullWidth style={{ marginBottom: '1rem' }}>
         Select Random Map
       </Button>
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         {possibleMaps.map((map, index) => (
           <MapItem key={index} map={map} index={index} handleSelectMap={handleSelectMap} />
         ))}

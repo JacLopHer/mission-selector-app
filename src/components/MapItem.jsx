@@ -13,7 +13,7 @@ const MapItem = ({ map, index, handleSelectMap }) => {
     };
 
     return (
-        <Grid item key={index} xs={6} sm={4} style={{ padding: '4px' }}> {/* Dos mapas por fila en pantallas pequeñas, tres en pantallas medianas */}
+        <Grid item key={index} xs={6} sm={4} style={{ padding: '2px', marginBottom: '0.5rem' }}> {/* Dos mapas por fila en pantallas pequeñas, tres en pantallas medianas */}
             <Grid container alignItems="center">
                 <Grid item xs>
                     <StyledTitle variant="h7" onClick={() => handleSelectMap(map)} style={{ fontSize: '0.8rem' }}> {/* Título más pequeño */}
