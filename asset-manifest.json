@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/mission-selector-app/static/css/main.73ea95c4.css",
-    "main.js": "/mission-selector-app/static/js/main.e0b79957.js",
+    "main.css": "/mission-selector-app/static/css/main.a63a8fed.css",
+    "main.js": "/mission-selector-app/static/js/main.e9436782.js",
     "static/js/453.6a0655f2.chunk.js": "/mission-selector-app/static/js/453.6a0655f2.chunk.js",
+    "static/media/exo-2-latin-400-normal.woff": "/mission-selector-app/static/media/exo-2-latin-400-normal.93e691435fef9c469140.woff",
+    "static/media/exo-2-latin-ext-400-normal.woff": "/mission-selector-app/static/media/exo-2-latin-ext-400-normal.4ee0866dc1cf9d54de1c.woff",
+    "static/media/exo-2-latin-400-normal.woff2": "/mission-selector-app/static/media/exo-2-latin-400-normal.b077c526fdc07080c812.woff2",
+    "static/media/exo-2-cyrillic-ext-400-normal.woff": "/mission-selector-app/static/media/exo-2-cyrillic-ext-400-normal.43dde3401a523afe593b.woff",
+    "static/media/exo-2-latin-ext-400-normal.woff2": "/mission-selector-app/static/media/exo-2-latin-ext-400-normal.3fd70910511af05c0470.woff2",
+    "static/media/exo-2-cyrillic-ext-400-normal.woff2": "/mission-selector-app/static/media/exo-2-cyrillic-ext-400-normal.f002889b709d1f9a44d6.woff2",
+    "static/media/exo-2-cyrillic-400-normal.woff": "/mission-selector-app/static/media/exo-2-cyrillic-400-normal.9d08b16df876d2e8610e.woff",
+    "static/media/exo-2-cyrillic-400-normal.woff2": "/mission-selector-app/static/media/exo-2-cyrillic-400-normal.f16020677ff84b01c3bd.woff2",
+    "static/media/exo-2-vietnamese-400-normal.woff": "/mission-selector-app/static/media/exo-2-vietnamese-400-normal.ea760cfc958237c2947c.woff",
+    "static/media/exo-2-vietnamese-400-normal.woff2": "/mission-selector-app/static/media/exo-2-vietnamese-400-normal.3ee4afa0890c3b85b57b.woff2",
     "index.html": "/mission-selector-app/index.html",
-    "main.73ea95c4.css.map": "/mission-selector-app/static/css/main.73ea95c4.css.map",
-    "main.e0b79957.js.map": "/mission-selector-app/static/js/main.e0b79957.js.map",
+    "main.a63a8fed.css.map": "/mission-selector-app/static/css/main.a63a8fed.css.map",
+    "main.e9436782.js.map": "/mission-selector-app/static/js/main.e9436782.js.map",
     "453.6a0655f2.chunk.js.map": "/mission-selector-app/static/js/453.6a0655f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73ea95c4.css",
-    "static/js/main.e0b79957.js"
+    "static/css/main.a63a8fed.css",
+    "static/js/main.e9436782.js"
   ]
 }
