@@ -39,6 +39,7 @@ const MapSelector = () => {
           padding: '10px 20px',
           boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
           transition: 'background 0.3s, transform 0.2s',
+          margin: '0.5rem'
         }}>
         Select Random Map
       </Button>
@@ -59,6 +60,7 @@ const MapSelector = () => {
           padding: '10px 20px',
           boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
           transition: 'background 0.3s, transform 0.2s',
+          margin: '0.5rem'
         }}>
         Go Back
       </Button>

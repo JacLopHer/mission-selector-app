@@ -21,7 +21,7 @@ const MissionDetails = () => {
 
   return (
     <div>
-      <StyledContainer>
+      <StyledContainer style={{marginBottom: '0.5rem'}}>
           <StyledTitle variant="h4">Mission Details</StyledTitle>
       </StyledContainer>
       <Typography variant="body1"><strong>Mission Round:</strong> {selectedMission.round}</Typography>
@@ -71,6 +71,7 @@ const MissionDetails = () => {
           padding: '10px 20px',
           boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
           transition: 'background 0.3s, transform 0.2s',
+          margin: '0.5rem'
         }}>
             Go Back
       </Button>

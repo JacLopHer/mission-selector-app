@@ -11,3 +11,9 @@ export const hammerAndAnvil = 'Hammer & Anvil';
 export const crucibleOfBatle = 'Crucible of Battle';
 export const sweepingEngagement = 'Sweeping Engagement';
 export const tippingPoint = 'Tipping Point';
+//Missions
+export const takeAndHold = 'Take & Hold';
+export const ritual = 'Ritual';
+export const terraform = 'Terraform';
+export const linchpin = 'Linchpin';
+export const burdenOfTrust = 'Burden of Trust'
