@@ -26,6 +26,15 @@ const TournamentModeSelector = () => {
                             variant="contained"
                             onClick={() => handleSelectTournamentType(type)}
                             fullWidth
+                            style={{
+                                background: 'linear-gradient(45deg, #FF5722, #FF9800)',
+                                border: 'none',
+                                borderRadius: '8px',
+                                color: 'white',
+                                padding: '10px 20px',
+                                boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
+                                transition: 'background 0.3s, transform 0.2s',
+                              }}
                         >
                             {type}
                         </Button>
