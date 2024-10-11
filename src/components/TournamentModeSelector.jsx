@@ -4,7 +4,8 @@ import { tournamentTypes } from '../utils/tournamentTypes';
 import MissionContext from '../MissionContext';
 import { List, ListItem, Button } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
-import '../styles/TournamentModeSelector.css'; // Importa el archivo CSS
+import '../styles/TournamentModeSelector.css';
+import classes from '../styles/MissionSelector.module.scss'; 
 
 const TournamentModeSelector = () => {
     const { setSelectedTournamentType } = useContext(MissionContext);
@@ -22,19 +23,10 @@ const TournamentModeSelector = () => {
                 {tournamentTypes.map((type, index) => (
                     <ListItem key={index} sx={{ width: '100%' }}> {/* Asegura que los ListItems sean del 100% de ancho */}
                         <Button
-                            className="button" // Usamos className
+                            className={classes.button}
                             variant="contained"
                             onClick={() => handleSelectTournamentType(type)}
                             fullWidth
-                            style={{
-                                background: 'linear-gradient(45deg, #FF5722, #FF9800)',
-                                border: 'none',
-                                borderRadius: '8px',
-                                color: 'white',
-                                padding: '10px 20px',
-                                boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
-                                transition: 'background 0.3s, transform 0.2s',
-                              }}
                         >
                             {type}
                         </Button>

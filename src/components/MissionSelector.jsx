@@ -33,25 +33,25 @@ const MissionSelector = () => {
       >
         Select Random Mission Round
       </Button>
-      <Grid container alignItems="center" spacing={1} className="mission-grid">
+      <Grid container alignItems="center" spacing={1} className={classes.missionGrid}>
         {possibleMissions.map((mission, index) => (
-          <Grid item xs={6} sm={4} key={index} className="mission-grid-item">
+          <Grid item xs={6} sm={4} key={index} className={classes.missionGridItem}>
             <Button 
-              className="mission-button" 
+              className={classes.missionButton} 
               fullWidth 
               onClick={() => handleSelectMission(mission)}
             >
-              <Typography variant="body1" className="mission-text">
-                <span className="mission-title"><strong>{mission.primaryMission}</strong></span>
-                <span className="mission-details">{mission.deployment}</span>
-                {mission.missionRule !== "Chilling Rain" && <span className="mission-details">{mission.missionRule}</span>}
+              <Typography variant="body1" className={classes.missionText}>
+                <span className={classes.missionTitle}><strong>{mission.primaryMission}</strong></span>
+                <span className={classes.missionDetails}>{mission.deployment}</span>
+                {mission.missionRule !== "Chilling Rain" && <span className={classes.missionDetails}>{mission.missionRule}</span>}
               </Typography>
             </Button>
           </Grid>
         ))}
       </Grid>
       <Button 
-        className="back-button" 
+        className={classes.backButton} 
         onClick={() => navigate('/mission-selector-app')} 
         fullWidth
       >

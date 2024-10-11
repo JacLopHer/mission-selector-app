@@ -1,71 +1,86 @@
-.mission-grid {
-    margin-top: 1rem;
-  }
+.missionGrid {
+  margin-top: 1rem;
+}
+
+.missionGridItem {
+  padding: 0.5rem;
+}
+
+.missionButton {
+  background: linear-gradient(45deg, #666699, #21CBF3);
+  border: none;
+  border-radius: 8px;
+  color: white;
   
-  .mission-grid-item {
-    padding: 0.5rem;
-  }
-  
-  .mission-button {
-    background: linear-gradient(45deg, #666699, #21CBF3);
-    border: none;
-    border-radius: 8px;
-    color: white;
-    
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s, transform 0.2s;
-    width: 100%;
-    height: 175px;
-  }
-  
-  .mission-button:hover {
-    background: linear-gradient(45deg, #21CBF3, #2196F3);
-  }
-  
-  .mission-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 0.75rem;
-  }
-  
-  .mission-title {
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-align: center;
-  }
-  
-  .mission-details {
-    text-transform: none;
-  }
-  
-  .randomButton {
-    background: linear-gradient(45deg, #FF5722, #666699);
-    border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 10px 20px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s, transform 0.2s;
-    margin: 0.5rem 0;
-  }
-  
-  .random-button:hover {
-    background: linear-gradient(45deg, #FF9800, #FF5722);
-  }
-  
-  .back-button {
-    background: linear-gradient(45deg, #666699, #660066);
-    border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 10px 20px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s, transform 0.2s;
-    margin: 0.5rem 0;
-  }
-  
-  .back-button:hover {
-    background: #A0A0A0;
-  }
-  
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.2s;
+  width: 100%;
+  height: 175px;
+}
+
+.missionButton:hover {
+  background: linear-gradient(45deg, #21CBF3, #2196F3);
+}
+
+.missionText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.missionTitle {
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.missionDetails {
+  text-transform: none;
+}
+
+.randomButton {
+  background: linear-gradient(45deg, #FF5722, #666699);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.2s;
+  margin: 0.5rem 0;
+}
+
+.randomButton:hover {
+  background: linear-gradient(45deg, #FF9800, #FF5722);
+}
+
+.backButton {
+  background: linear-gradient(45deg, #666699, #660066);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.2s;
+  margin: 0.5rem 0;
+}
+
+.backButton:hover {
+  background: #A0A0A0;
+}
+
+
+.button {
+  background: linear-gradient(45deg, #FF5722, #FF9800);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #FFD700; /* Color dorado más claro en hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra en hover */
+}

@@ -6,6 +6,7 @@ import { Button, Grid } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
 import MapItem from './MapItem';
 import { warmaster } from '../constants/constants';
+import classes from '../styles/MissionSelector.module.scss'; // Asegúrate de crear este archivo CSS
 
 const MapSelector = () => {
   const navigate = useNavigate();
@@ -42,16 +43,7 @@ const MapSelector = () => {
       <StyledContainer>
         <StyledTitle variant="h4">Select Map</StyledTitle>
       </StyledContainer>
-      <Button variant="contained" color="primary" onClick={handleRandomSelect} fullWidth  style={{
-          background: 'linear-gradient(45deg, #FF5722, #666699)',
-          border: 'none',
-          borderRadius: '8px',
-          color: 'white',
-          padding: '10px 20px',
-          boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
-          transition: 'background 0.3s, transform 0.2s',
-          margin: '0.5rem'
-        }}>
+      <Button variant="contained" color="primary" onClick={handleRandomSelect} fullWidth  className={classes.randomButton}>
         Select Random Map
       </Button>
       <Grid container spacing={0}>
@@ -62,17 +54,7 @@ const MapSelector = () => {
       <Button 
         onClick={handleGoBack} 
         fullWidth 
-        style={{
-          marginTop: '1rem',
-          background: 'linear-gradient(45deg, #666699, #660066)',
-          border: 'none',
-          borderRadius: '8px',
-          color: 'white',
-          padding: '10px 20px',
-          boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
-          transition: 'background 0.3s, transform 0.2s',
-          margin: '0.5rem'
-        }}>
+        className={classes.backButton}>
         Go Back
       </Button>
     </div>

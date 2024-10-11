@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Typography, Button, Card, CardMedia, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
 import { warmaster } from '../constants/constants';
+import classes from '../styles/MissionSelector.module.scss'; // Asegúrate de crear este archivo CSS
 
 const MissionDetails = () => {
   const { selectedMission, selectedMap, selectedTournamentType } = useContext(MissionContext);
@@ -67,17 +68,7 @@ const MissionDetails = () => {
           </Button>
         </DialogActionsWrapper>
       </Dialog>
-      <Button variant="outlined" color="secondary" onClick={handleGoBack} fullWidth
-         style={{
-          background: 'linear-gradient(45deg, #666699, #660066)',
-          border: 'none',
-          borderRadius: '8px',
-          color: 'white',
-          padding: '10px 20px',
-          boxShadow: '0 3px 5px rgba(0, 0, 0, 0.3)',
-          transition: 'background 0.3s, transform 0.2s',
-          margin: '0.5rem'
-        }}>
+      <Button variant="outlined" color="secondary" onClick={handleGoBack} fullWidth className={classes.backButton} >
             Go Back
       </Button>
     </div>
