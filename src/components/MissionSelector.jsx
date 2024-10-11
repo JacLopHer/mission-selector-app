@@ -4,7 +4,7 @@ import { missions } from '../utils/missions';
 import MissionContext from '../MissionContext';
 import { Button, Typography, Grid } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
-import '../styles/MissionSelector.module.scss'; // Asegúrate de crear este archivo CSS
+import classes from '../styles/MissionSelector.module.scss'; // Asegúrate de crear este archivo CSS
 
 const MissionSelector = () => {
   const { selectedTournamentType, setSelectedMission } = useContext(MissionContext);
@@ -27,7 +27,7 @@ const MissionSelector = () => {
         <StyledTitle variant="h4">Select Round</StyledTitle>
       </StyledContainer>
       <Button 
-        className="random-button" 
+        className={classes.randomButton} 
         onClick={handleRandomSelect} 
         fullWidth
       >
