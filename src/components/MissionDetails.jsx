@@ -3,9 +3,10 @@ import MissionContext from '../MissionContext';
 import { useNavigate } from 'react-router-dom';
 import { Typography, Button, Card, CardMedia, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
+import { warmaster } from '../constants/constants';
 
 const MissionDetails = () => {
-  const { selectedMission, selectedMap } = useContext(MissionContext);
+  const { selectedMission, selectedMap, selectedTournamentType } = useContext(MissionContext);
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
@@ -18,6 +19,10 @@ const MissionDetails = () => {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const handleGoBack = () => {
+    selectedTournamentType === warmaster ? navigate('/select-mission') : navigate(-1)
+  }
 
   return (
     <div>
@@ -62,7 +67,7 @@ const MissionDetails = () => {
           </Button>
         </DialogActionsWrapper>
       </Dialog>
-      <Button variant="outlined" color="secondary" onClick={() => navigate(-1)} fullWidth
+      <Button variant="outlined" color="secondary" onClick={handleGoBack} fullWidth
          style={{
           background: 'linear-gradient(45deg, #666699, #660066)',
           border: 'none',

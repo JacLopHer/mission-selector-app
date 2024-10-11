@@ -1,15 +1,26 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MissionContext from '../MissionContext';
 import { maps } from '../utils/maps';
 import { Button, Grid } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
 import MapItem from './MapItem';
+import { warmaster } from '../constants/constants';
 
 const MapSelector = () => {
   const navigate = useNavigate();
   const { selectedMission, setSelectedMap, selectedTournamentType } = useContext(MissionContext);
   const possibleMaps = maps(selectedMission, selectedTournamentType);
+  
+
+  useEffect(() => {
+    if(selectedTournamentType === warmaster){
+      setSelectedMap(possibleMaps[0])
+      navigate('/mission-details'); 
+    }
+  },[])
+  
+  
 
   const handleSelectMap = (map) => {
     setSelectedMap(map);

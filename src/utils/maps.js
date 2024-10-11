@@ -1,12 +1,13 @@
-import { assemble2025, crucibleOfBatle, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria } from "../constants/constants";
+import { assemble2025, crucibleOfBatle, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
 import { crucibleOfBattleMaps, crucibleOfBattleMapsTalavera, crucibleOfBattleMapsVitoria } from "./maps/crucible";
 import { hammerAndAnvilMaps, hammerAndAnvilMapsVitoria } from "./maps/hammerAndAnvil";
 import { searchAndDestroyMaps, searchAndDestroyMapsTalavera, searchAndDestroyMapsVitoria } from "./maps/searchAndDestroy";
 import { sweepingEngagementMaps } from "./maps/sweepingEngagement";
 import { tippingPointMaps, tippingPointMapsTalavera } from "./maps/tippingPoint";
+import { warmasterMaps } from "./maps/warmaster";
 
-export const maps =  ({deployment}, selectedTournamentType) => {
-    let maps =getTournamentMaps(selectedTournamentType, deployment);
+export const maps =  ({deployment, round}, selectedTournamentType) => {
+    let maps =getTournamentMaps(selectedTournamentType, round, deployment);
     switch(selectedTournamentType){
         case freakWars:
             return filterMaps(maps,3,5);
@@ -15,18 +16,23 @@ export const maps =  ({deployment}, selectedTournamentType) => {
         default:
             return maps;
     }
-} 
+}
 
-const getTournamentMaps = (selectedTournamentType, deployment) => {
+const getTournamentMaps = (selectedTournamentType, round, deployment) => {
     switch(selectedTournamentType) {
         case vitoria:
             return getMapsForDeploymentVitoria(deployment);
         case talavera2024:
             return getMapsForDeploymentTalavera(deployment);
+        case warmaster:
+            return getMapsForRoundWarmaster(round);
         default:
             return getMapsForDeployment(deployment);
     }
 }
+
+//Warmaster maps
+const getMapsForRoundWarmaster = (round) => warmasterMaps.filter(map => map.table === round)
 
 //Only for the assemble tournament
 const getMapsForAssemblePerDeployment = (deployment, maps) => deployment === crucibleOfBatle ? filterMaps(maps,1,8) : filterMaps(maps,2,7);
