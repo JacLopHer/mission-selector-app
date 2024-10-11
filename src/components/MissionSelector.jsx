@@ -4,7 +4,7 @@ import { missions } from '../utils/missions';
 import MissionContext from '../MissionContext';
 import { Button, Typography, Grid } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
-import '../styles/MissionSelector.css'; // Asegúrate de crear este archivo CSS
+import '../styles/MissionSelector.module.scss'; // Asegúrate de crear este archivo CSS
 
 const MissionSelector = () => {
   const { selectedTournamentType, setSelectedMission } = useContext(MissionContext);
@@ -52,7 +52,7 @@ const MissionSelector = () => {
       </Grid>
       <Button 
         className="back-button" 
-        onClick={() => navigate(-1)} 
+        onClick={() => navigate('/mission-selector-app')} 
         fullWidth
       >
         Go Back

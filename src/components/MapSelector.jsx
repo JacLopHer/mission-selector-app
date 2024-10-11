@@ -34,7 +34,7 @@ const MapSelector = () => {
 
   const handleGoBack = () => {
     setSelectedMap(null);
-    navigate(-1);
+    navigate('/select-mission');
   };
 
   return (
