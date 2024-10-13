@@ -4,7 +4,6 @@ import { tournamentTypes } from '../utils/tournamentTypes';
 import MissionContext from '../MissionContext';
 import { List, ListItem, Button } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
-import '../styles/TournamentModeSelector.css';
 import classes from '../styles/MissionSelector.module.scss'; 
 
 const TournamentModeSelector = () => {

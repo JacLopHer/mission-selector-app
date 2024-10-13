@@ -7,7 +7,6 @@ import TournamentModeSelector from './components/TournamentModeSelector';
 import { MissionProvider } from './MissionContext';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
-import './styles/styles.css'; // Asegúrate de que aquí se carguen los estilos globales
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import '@fontsource/exo-2'; 
 

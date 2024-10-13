@@ -68,7 +68,7 @@ const MissionDetails = () => {
           </Button>
         </DialogActionsWrapper>
       </Dialog>
-      <Button variant="outlined" color="secondary" onClick={handleGoBack} fullWidth className={classes.backButton} >
+      <Button onClick={handleGoBack} fullWidth className={classes.backButton} >
             Go Back
       </Button>
     </div>

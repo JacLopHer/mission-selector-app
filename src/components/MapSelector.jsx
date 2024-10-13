@@ -6,7 +6,7 @@ import { Button, Grid } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
 import MapItem from './MapItem';
 import { warmaster } from '../constants/constants';
-import classes from '../styles/MissionSelector.module.scss'; // Asegúrate de crear este archivo CSS
+import classes from '../styles/MissionSelector.module.scss';
 
 const MapSelector = () => {
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ const MapSelector = () => {
       <StyledContainer>
         <StyledTitle variant="h4">Select Map</StyledTitle>
       </StyledContainer>
-      <Button variant="contained" color="primary" onClick={handleRandomSelect} fullWidth  className={classes.randomButton}>
+      <Button onClick={handleRandomSelect} fullWidth  className={classes.randomButton}>
         Select Random Map
       </Button>
       <Grid container spacing={0}>
