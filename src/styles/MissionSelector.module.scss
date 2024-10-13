@@ -1,9 +1,9 @@
 .missionGrid {
-  margin-top: 1rem  !important;
+  margin-top: 0.5rem  !important;
 }
 
 .missionGridItem {
-  padding: 0.5rem;
+  padding: 0.0rem;
 }
 
 .missionButton {
@@ -45,7 +45,7 @@
   padding: 10px  !important;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3)  !important;
   transition: background 0.3s, transform 0.2s  !important;
-  margin: 0.5rem 0rem !important;
+  margin: 0.5rem 0rem 0rem 0rem !important;
 }
 
 .randomButton:hover {
