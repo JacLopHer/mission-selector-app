@@ -1,11 +1,3 @@
-.missionGrid {
-  margin-top: 0.5rem  !important;
-}
-
-.missionGridItem {
-  padding: 0.0rem;
-}
-
 .missionButton {
   background: linear-gradient(45deg, #666699, #21CBF3);
   border: none;
@@ -45,7 +37,7 @@
   padding: 10px  !important;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3)  !important;
   transition: background 0.3s, transform 0.2s  !important;
-  margin: 0.5rem 0rem 0rem 0rem !important;
+  margin: 0.5rem 0rem !important;
 }
 
 .randomButton:hover {
@@ -64,20 +56,4 @@
 
 .backButton:hover {
   background: #A0A0A0;
-}
-
-
-.button {
-  background: linear-gradient(45deg, #FF5722, #FF9800);
-  border: none;
-  border-radius: 8px;
-  color: white;
-  padding: 10px 20px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s, transform 0.2s;
-}
-
-.button:hover {
-  background-color: #FFD700; /* Color dorado más claro en hover */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra en hover */
 }
