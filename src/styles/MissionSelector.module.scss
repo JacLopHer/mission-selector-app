@@ -61,11 +61,11 @@
 .button {
   background: linear-gradient(45deg, #FF5722, #FF9800);
   border: none;
-  border-radius: 8px;
-  color: white;
-  padding: 10px 20px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s, transform 0.2s;
+  border-radius: 8px !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3) !important;
+  transition: background 0.3s, transform 0.2s !important;
 }
 
 .button:hover {

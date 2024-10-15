@@ -23,7 +23,6 @@ const TournamentModeSelector = () => {
                     <ListItem key={index} sx={{ width: '100%' }}> {/* Asegura que los ListItems sean del 100% de ancho */}
                         <Button
                             className={classes.button}
-                            variant="contained"
                             onClick={() => handleSelectTournamentType(type)}
                             fullWidth
                         >
