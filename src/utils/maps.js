@@ -24,8 +24,10 @@ const getTournamentMaps = (selectedTournamentType, round, deployment) => {
             return getMapsForDeploymentVitoria(deployment);
         case talavera2024:
             return getMapsForDeploymentTalavera(deployment);
-        case warmaster || campingNauta:
+        case warmaster | campingNauta:
             return getMapsForRoundWarmaster(round);
+        case campingNauta:
+            return getMapsForRoundWarmaster(round);    
         default:
             return getMapsForDeployment(deployment);
     }
@@ -33,6 +35,7 @@ const getTournamentMaps = (selectedTournamentType, round, deployment) => {
 
 //Warmaster maps
 const getMapsForRoundWarmaster = (round) => warmasterMaps.filter(map => map.table === round)
+//
 
 //Only for the assemble tournament
 const getMapsForAssemblePerDeployment = (deployment, maps) => deployment === crucibleOfBatle ? filterMaps(maps,1,8) : filterMaps(maps,2,7);

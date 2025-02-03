@@ -1,5 +1,5 @@
 
-import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024 } from './../constants/constants';
+import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta } from './../constants/constants';
 
 export const missions = (tournamentType) => {
   switch(tournamentType){
@@ -263,31 +263,31 @@ const warmasterMissions = [
 
 const campingNautaMissions = [
   {
-    round: 1,
+    round: 8,
     primaryMission: "Burden of Trust",
     missionRule: "Hidden Supplies",
     deployment: "Hammer & Anvil",
   },
   {
-    round: 2,
+    round: 6,
     primaryMission: "Scorched Earth",
     missionRule: "Inspired Leadership",
     deployment: "Crucible of Battle",
   },
   {
-    round: 3,
+    round: 4,
     primaryMission: "Take and Hold",
     missionRule: "Hidden Supplies",
     deployment: "Search & Destroy",
   },
   {
-    round: 4,
+    round: 5,
     primaryMission: "Purge the Foe",
     missionRule: "Smoke and Mirrors",
     deployment: "Tipping Point",
   },
   {
-    round: 5,
+    round: 9,
     primaryMission: "Take and Hold",
     missionRule: "Raise Banners",
     deployment: "Tipping Point",
