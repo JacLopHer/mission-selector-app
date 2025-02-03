@@ -24,7 +24,7 @@ const getTournamentMaps = (selectedTournamentType, round, deployment) => {
             return getMapsForDeploymentVitoria(deployment);
         case talavera2024:
             return getMapsForDeploymentTalavera(deployment);
-        case warmaster | campingNauta:
+        case warmaster:
             return getMapsForRoundWarmaster(round);
         case campingNauta:
             return getMapsForRoundWarmaster(round);    

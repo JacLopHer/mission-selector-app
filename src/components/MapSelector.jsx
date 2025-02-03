@@ -5,7 +5,7 @@ import { maps } from '../utils/maps';
 import { Button, Grid } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
 import MapItem from './MapItem';
-import { warmaster } from '../constants/constants';
+import { campingNauta, warmaster } from '../constants/constants';
 import classes from '../styles/MissionSelector.module.scss';
 
 const MapSelector = () => {
@@ -15,7 +15,7 @@ const MapSelector = () => {
   
 
   useEffect(() => {
-    if(selectedTournamentType === warmaster){
+    if(selectedTournamentType === warmaster || campingNauta){
       setSelectedMap(possibleMaps[0])
       navigate('/mission-details'); 
     }

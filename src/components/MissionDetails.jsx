@@ -3,7 +3,7 @@ import MissionContext from '../MissionContext';
 import { useNavigate } from 'react-router-dom';
 import { Typography, Button, Card, CardMedia, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
-import { warmaster } from '../constants/constants';
+import { campingNauta, warmaster } from '../constants/constants';
 import classes from '../styles/MissionSelector.module.scss'; // Asegúrate de crear este archivo CSS
 
 const MissionDetails = () => {
@@ -22,7 +22,7 @@ const MissionDetails = () => {
   };
 
   const handleGoBack = () => {
-    selectedTournamentType === warmaster ? navigate('/select-mission') : navigate(-1)
+    selectedTournamentType === warmaster || campingNauta ? navigate('/select-mission') : navigate(-1)
   }
 
   return (
