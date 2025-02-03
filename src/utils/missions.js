@@ -13,6 +13,8 @@ export const missions = (tournamentType) => {
       return freakWarsMissions;
     case assemble2025:
       return assemble2025Missions;
+    case campingNauta:
+      return campingNautaMissions;
     default:
       return warmasterMissions;
   }  
@@ -253,6 +255,39 @@ const warmasterMissions = [
   },
   {
     round: 9,
+    primaryMission: "Take and Hold",
+    missionRule: "Raise Banners",
+    deployment: "Tipping Point",
+  },
+]
+
+const campingNautaMissions = [
+  {
+    round: 1,
+    primaryMission: "Burden of Trust",
+    missionRule: "Hidden Supplies",
+    deployment: "Hammer & Anvil",
+  },
+  {
+    round: 2,
+    primaryMission: "Scorched Earth",
+    missionRule: "Inspired Leadership",
+    deployment: "Crucible of Battle",
+  },
+  {
+    round: 3,
+    primaryMission: "Take and Hold",
+    missionRule: "Hidden Supplies",
+    deployment: "Search & Destroy",
+  },
+  {
+    round: 4,
+    primaryMission: "Purge the Foe",
+    missionRule: "Smoke and Mirrors",
+    deployment: "Tipping Point",
+  },
+  {
+    round: 5,
     primaryMission: "Take and Hold",
     missionRule: "Raise Banners",
     deployment: "Tipping Point",

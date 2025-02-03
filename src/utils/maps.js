@@ -1,4 +1,4 @@
-import { assemble2025, crucibleOfBatle, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
+import { assemble2025, campingNauta, crucibleOfBatle, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
 import { crucibleOfBattleMaps, crucibleOfBattleMapsTalavera, crucibleOfBattleMapsVitoria } from "./maps/crucible";
 import { hammerAndAnvilMaps, hammerAndAnvilMapsVitoria } from "./maps/hammerAndAnvil";
 import { searchAndDestroyMaps, searchAndDestroyMapsTalavera, searchAndDestroyMapsVitoria } from "./maps/searchAndDestroy";
@@ -24,7 +24,7 @@ const getTournamentMaps = (selectedTournamentType, round, deployment) => {
             return getMapsForDeploymentVitoria(deployment);
         case talavera2024:
             return getMapsForDeploymentTalavera(deployment);
-        case warmaster:
+        case warmaster || campingNauta:
             return getMapsForRoundWarmaster(round);
         default:
             return getMapsForDeployment(deployment);

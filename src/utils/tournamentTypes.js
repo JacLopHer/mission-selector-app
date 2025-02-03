@@ -1,3 +1,3 @@
-import { teams, warmaster } from "../constants/constants";
+import { teams, warmaster, campingNauta } from "../constants/constants";
 
-export const tournamentTypes = [teams, warmaster]
+export const tournamentTypes = [teams, warmaster, campingNauta]

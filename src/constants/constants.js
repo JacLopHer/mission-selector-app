@@ -5,6 +5,7 @@ export const teams = "Teams";
 export const assemble2025= "Assemble 2025"
 export const vitoria = "Vitoria"
 export const talavera2024 = "Talavera 2024"
+export const campingNauta= "Camping Nauta";
 //deployments
 export const searchAndDestroy = "Search & Destroy";
 export const hammerAndAnvil = 'Hammer & Anvil';
