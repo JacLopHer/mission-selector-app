@@ -22,7 +22,7 @@ const MissionDetails = () => {
   };
 
   const handleGoBack = () => {
-    selectedTournamentType === warmaster || campingNauta ? navigate('/select-mission') : navigate(-1)
+    selectedTournamentType === warmaster || selectedTournamentType === campingNauta ? navigate('/select-mission') : navigate(-1)
   }
 
   return (

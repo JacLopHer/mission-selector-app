@@ -15,7 +15,7 @@ const MapSelector = () => {
   
 
   useEffect(() => {
-    if(selectedTournamentType === warmaster || campingNauta){
+    if(selectedTournamentType === warmaster || selectedTournamentType === campingNauta){
       setSelectedMap(possibleMaps[0])
       navigate('/mission-details'); 
     }
