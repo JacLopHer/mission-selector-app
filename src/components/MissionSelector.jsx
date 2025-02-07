@@ -10,7 +10,7 @@ const MissionSelector = () => {
   const { selectedTournamentType, setSelectedMission } = useContext(MissionContext);
   const navigate = useNavigate();
   const possibleMissions = missions(selectedTournamentType);
-
+  
   const handleSelectMission = (mission) => {
     setSelectedMission(mission);
     navigate('/select-map');

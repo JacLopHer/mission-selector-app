@@ -1,4 +1,4 @@
-//tournaments
+//Strings
 export const freakWars = "Freak Wars";
 export const warmaster = "Warmaster";
 export const teams = "Teams";
@@ -18,3 +18,7 @@ export const ritual = 'Ritual';
 export const terraform = 'Terraform';
 export const linchpin = 'Linchpin';
 export const burdenOfTrust = 'Burden of Trust'
+//Tournaments
+export const teamsTournament = {name: teams, singles: false};
+export const campingNautaTournament = {name: campingNauta, singles: true};
+export const warmasterTournament = {name: warmaster, singles: true};

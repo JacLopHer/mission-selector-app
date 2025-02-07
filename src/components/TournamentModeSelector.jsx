@@ -14,7 +14,6 @@ const TournamentModeSelector = () => {
         setSelectedTournamentType(tournamentType);
         navigate('/select-mission');
     };
-
     return (
         <StyledContainer>
             <StyledTitle variant="h4">Tournament</StyledTitle>
@@ -26,7 +25,7 @@ const TournamentModeSelector = () => {
                             onClick={() => handleSelectTournamentType(type)}
                             fullWidth
                         >
-                            {type}
+                            {type.name}
                         </Button>
                     </ListItem>
                 ))}

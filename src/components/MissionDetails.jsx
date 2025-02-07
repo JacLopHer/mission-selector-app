@@ -13,17 +13,11 @@ const MissionDetails = () => {
 
   if (!selectedMission || !selectedMap) return null;
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+  const handleClickOpen = () => setOpen(true);
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClose = () => setOpen(false);
 
-  const handleGoBack = () => {
-    selectedTournamentType === warmaster || selectedTournamentType === campingNauta ? navigate('/select-mission') : navigate(-1)
-  }
+  const handleGoBack = () => selectedTournamentType.singles ? navigate('/select-mission') : navigate(-1)
 
   return (
     <div>
