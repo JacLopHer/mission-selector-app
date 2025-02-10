@@ -11,10 +11,11 @@ import classes from '../styles/MissionSelector.module.scss';
 const MapSelector = () => {
   const navigate = useNavigate();
   const { selectedMission, setSelectedMap, selectedTournamentType } = useContext(MissionContext);
-  const possibleMaps = maps(selectedMission, selectedTournamentType);
+  const possibleMaps = maps(selectedMission, selectedTournamentType.name);
   
 
   useEffect(() => {
+    console.log(possibleMaps)
     if(selectedTournamentType.singles){
       setSelectedMap(possibleMaps[0])
       navigate('/mission-details'); 

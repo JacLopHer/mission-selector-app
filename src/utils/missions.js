@@ -2,7 +2,7 @@
 import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta } from './../constants/constants';
 
 export const missions = (tournamentType) => {
-  switch(tournamentType){
+  switch(tournamentType.name){
     case teams:
       return teamMissions;
     case talavera2024:
