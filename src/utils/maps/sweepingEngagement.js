@@ -56,3 +56,37 @@ export const sweepingEngagementMaps = [
         image: './mission-selector-app/media/sweeping/40_se.png'
     }*/
 ]
+
+export const sweepingEngagementBattleMapsAlpine = [
+    {
+        table: 1,
+        type: "who cares",
+        number: 1,
+        image: './mission-selector-app/media/crucible/Sweeping_Alpine_1.jpg'
+    },
+    {
+        table: 2,
+        type: "who cares",
+        number: 2,
+        image: './mission-selector-app/media/crucible/Sweeping_Alpine_2_3.jpg'
+    },
+    {
+        table: 3,
+        type: "who cares",
+        number: 2,
+        image: './mission-selector-app/media/crucible/Sweeping_Alpine_2_3.jpg'
+    },
+    {
+        table: 2,
+        type: "who cares",
+        number: 3,
+        image: './mission-selector-app/media/crucible/Sweeping_Alpine_4_5.jpg'
+    },
+    {
+        table: 5,
+        type: "who cares",
+        number: 3,
+        image: './mission-selector-app/media/crucible/Sweeping_Alpine_4_5.jpg'
+    }
+
+]

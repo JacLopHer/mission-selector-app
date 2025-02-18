@@ -1,9 +1,9 @@
-import { assemble2025, campingNauta, crucibleOfBatle, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
-import { crucibleOfBattleMaps, crucibleOfBattleMapsTalavera, crucibleOfBattleMapsVitoria } from "./maps/crucible";
-import { hammerAndAnvilMaps, hammerAndAnvilMapsVitoria } from "./maps/hammerAndAnvil";
-import { searchAndDestroyMaps, searchAndDestroyMapsTalavera, searchAndDestroyMapsVitoria } from "./maps/searchAndDestroy";
-import { sweepingEngagementMaps } from "./maps/sweepingEngagement";
-import { tippingPointMaps, tippingPointMapsTalavera } from "./maps/tippingPoint";
+import { alpineCup, assemble2025, campingNauta, crucibleOfBatle, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
+import { crucibleOfBattleMaps, crucibleOfBattleMapsAlpine, crucibleOfBattleMapsTalavera, crucibleOfBattleMapsVitoria } from "./maps/crucible";
+import { hammerAndAnvilBattleMapsAlpine, hammerAndAnvilMaps, hammerAndAnvilMapsVitoria } from "./maps/hammerAndAnvil";
+import { searchAndDestroyBattleMapsAlpine, searchAndDestroyMaps, searchAndDestroyMapsTalavera, searchAndDestroyMapsVitoria } from "./maps/searchAndDestroy";
+import { sweepingEngagementBattleMapsAlpine, sweepingEngagementMaps } from "./maps/sweepingEngagement";
+import { tippingPointBattleMapsAlpine, tippingPointMaps, tippingPointMapsTalavera } from "./maps/tippingPoint";
 import { warmasterMaps } from "./maps/warmaster";
 
 export const maps =  ({deployment, round}, selectedTournamentType) => {
@@ -24,10 +24,12 @@ const getTournamentMaps = (selectedTournamentType, round, deployment) => {
             return getMapsForDeploymentVitoria(deployment);
         case talavera2024:
             return getMapsForDeploymentTalavera(deployment);
+        case alpineCup:
+            return getMapsForDeploymentAlpine(deployment)
         case warmaster:
             return getMapsForRoundWarmaster(round);
         case campingNauta:
-            return getMapsForRoundWarmaster(round);    
+            return getMapsForRoundWarmaster(round);  
         default:
             return getMapsForDeployment(deployment);
     }
@@ -53,6 +55,24 @@ const getMapsForDeployment = (deployment) => {
             return sweepingEngagementMaps;
         case tippingPoint:
             return tippingPointMaps;    
+        default:
+            return [];
+    }
+}
+
+//For Alpine
+const getMapsForDeploymentAlpine = (deployment) => {
+    switch (deployment) {
+        case searchAndDestroy:
+            return searchAndDestroyBattleMapsAlpine;
+        case hammerAndAnvil:
+            return hammerAndAnvilBattleMapsAlpine;
+        case crucibleOfBatle:
+            return crucibleOfBattleMapsAlpine;
+        case sweepingEngagement:
+            return sweepingEngagementBattleMapsAlpine;
+        case tippingPoint:
+            return tippingPointBattleMapsAlpine;    
         default:
             return [];
     }
