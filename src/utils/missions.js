@@ -1,5 +1,5 @@
 
-import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta } from './../constants/constants';
+import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta, tippingPoint, sweepingEngagement, alpineCup } from './../constants/constants';
 
 export const missions = (tournamentType) => {
   switch(tournamentType.name){
@@ -15,11 +15,46 @@ export const missions = (tournamentType) => {
       return assemble2025Missions;
     case campingNauta:
       return campingNautaMissions;
+    case alpineCup:
+      return alpineCupMissions;
     default:
       return warmasterMissions;
   }  
 } 
 
+
+const alpineCupMissions = [
+  {
+    round: 1,
+    primaryMission: "Linchpin",
+    missionRule: "Fog of war",
+    deployment: hammerAndAnvil,
+  },
+  {
+    round: 2,
+    primaryMission: "Scorched Earth",
+    missionRule: "Swift action",
+    deployment: searchAndDestroy,
+  },
+  {
+    round: 3,
+    primaryMission: "Purge the foe",
+    missionRule: "Raise Banners",
+    deployment: crucibleOfBatle,
+  },
+  {
+    round: 4,
+    primaryMission: "Burden of Trust",
+    missionRule: "Inspired leadership",
+    deployment: tippingPoint,
+  },
+  {
+    round: 5,
+    primaryMission: "Take and Hold",
+    missionRule: "Smoke and Mirrors",
+    deployment: sweepingEngagement,
+  }
+]
 
 const talaveraMissions = [
   {

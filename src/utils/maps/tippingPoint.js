@@ -88,3 +88,37 @@ export const tippingPointMapsTalavera = [
         image: './mission-selector-app/media/gwmaps/layout_2_pariah.png'
     }
 ]
+
+export const tippingPointBattleMapsAlpine = [
+    {
+        table: 1,
+        type: "who cares",
+        number: 1,
+        image: './mission-selector-app/media/crucible/Tipping_Alpine_1.jpg'
+    },
+    {
+        table: 2,
+        type: "who cares",
+        number: 2,
+        image: './mission-selector-app/media/crucible/Tipping_Alpine_2_3.jpg'
+    },
+    {
+        table: 3,
+        type: "who cares",
+        number: 2,
+        image: './mission-selector-app/media/crucible/Tipping_Alpine_2_3.jpg'
+    },
+    {
+        table: 2,
+        type: "who cares",
+        number: 3,
+        image: './mission-selector-app/media/crucible/Tipping_Alpine_4_5.jpg'
+    },
+    {
+        table: 5,
+        type: "who cares",
+        number: 3,
+        image: './mission-selector-app/media/crucible/Tipping_Alpine_4_5.jpg'
+    }
+
+]

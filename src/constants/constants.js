@@ -23,4 +23,4 @@ export const burdenOfTrust = 'Burden of Trust'
 export const teamsTournament = {name: teams, singles: false};
 export const campingNautaTournament = {name: campingNauta, singles: true};
 export const warmasterTournament = {name: warmaster, singles: true};
-export const alpineCupTournament = {name: warmaster, singles: false};
+export const alpineCupTournament = {name: alpineCup, singles: false};
