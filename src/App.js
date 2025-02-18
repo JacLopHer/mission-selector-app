@@ -55,7 +55,6 @@ const App = () => {
               <Route path="/select-mission/" element={<MissionSelector />} />
               <Route path="/select-map/" element={<MapSelector />} />
               <Route path="/mission-details/" element={<MissionDetails />} />
-              <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>
         </Container>

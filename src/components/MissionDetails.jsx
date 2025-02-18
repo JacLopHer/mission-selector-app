@@ -3,7 +3,6 @@ import MissionContext from '../MissionContext';
 import { useNavigate } from 'react-router-dom';
 import { Typography, Button, Card, CardMedia, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper } from '@mui/material';
 import { StyledContainer, StyledTitle } from './StyledTitle';
-import { campingNauta, warmaster } from '../constants/constants';
 import classes from '../styles/MissionSelector.module.scss'; // Asegúrate de crear este archivo CSS
 
 const MissionDetails = () => {
