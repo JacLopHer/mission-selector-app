@@ -1,6 +1,6 @@
 import {teamsTournament, warmasterTournament, campingNautaTournament, alpineCupTournament } from "../constants/constants";
 
-export const tournamentTypes = [teamsTournament, warmasterTournament, campingNautaTournament, alpineCupTournament]
+export const tournamentTypes = [teamsTournament, warmasterTournament]
 
 
 export const isSinglesTournament = (tournamentType) => tournamentType.singles;
