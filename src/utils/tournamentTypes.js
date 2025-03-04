@@ -1,4 +1,4 @@
-import {teamsTournament, warmasterTournament, campingNautaTournament, alpineCupTournament } from "../constants/constants";
+import {teamsTournament, warmasterTournament} from "../constants/constants";
 
 export const tournamentTypes = [teamsTournament, warmasterTournament]
 
