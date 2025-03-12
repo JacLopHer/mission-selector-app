@@ -1,6 +1,7 @@
 import { Checkbox, Grid } from "@mui/material";
 import React, { useState } from 'react';
 import { StyledTitle } from "./StyledTitle";
+import { LazyImage } from "./LazyImage";
 
 const style = { width: '100%', height: 'auto' };
 const greyedStyle = { width: '100%', height: 'auto', filter: 'grayscale(1)' };
@@ -13,10 +14,10 @@ const MapItem = ({ map, index, handleSelectMap }) => {
     };
 
     return (
-        <Grid item key={index} xs={6} sm={4} style={{ padding: '2px', marginBottom: '0.1rem' }}> {/* Dos mapas por fila en pantallas pequeñas, tres en pantallas medianas */}
+        <Grid item key={index} xs={6} sm={4} style={{ padding: '2px', marginBottom: '0.1rem' }}>
             <Grid container alignItems="center">
                 <Grid item xs>
-                    <StyledTitle variant="h7" onClick={() => handleSelectMap(map)} style={{ fontSize: '1rem' }}> {/* Título más pequeño */}
+                    <StyledTitle variant="h7" onClick={() => handleSelectMap(map)} style={{ fontSize: '1rem' }}>
                         TABLE {index + 1}
                     </StyledTitle>
                 </Grid>
@@ -25,13 +26,12 @@ const MapItem = ({ map, index, handleSelectMap }) => {
                         onChange={handleChange}
                         checked={checked}
                         inputProps={{ 'aria-label': 'controlled' }}
-                        size="small" // Checkbox más pequeño
+                        size="small"
                         style={{ padding: 0 }}
-    
                     />
                 </Grid>
             </Grid>
-            <img
+            <LazyImage
                 src={map.image}
                 alt={map.name}
                 style={checked ? greyedStyle : style}
@@ -41,4 +41,4 @@ const MapItem = ({ map, index, handleSelectMap }) => {
     );
 };
 
-export default MapItem
+export default MapItem;
