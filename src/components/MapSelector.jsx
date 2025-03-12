@@ -15,7 +15,6 @@ const MapSelector = () => {
   
 
   useEffect(() => {
-    console.log(possibleMaps)
     if(selectedTournamentType.singles){
       setSelectedMap(possibleMaps[0])
       navigate('/mission-details'); 
