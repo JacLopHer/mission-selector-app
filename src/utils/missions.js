@@ -294,7 +294,7 @@ const teamAllMissions = [
     round: 9,
     primaryMission: "Terraform",
     missionRule: "Stalwarts",
-    deployment: crucibleOfBatle,
+    deployment: sweepingEngagement,
   },
 ];
 
