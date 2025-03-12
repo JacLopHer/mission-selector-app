@@ -2,50 +2,50 @@ export const hammerAndAnvilMaps = [
     {   
         table: 1,
         type: "Heavy",
-        number: 23,
-        image: './mission-selector-app/media/hammer/23_ha.png'
+        number: 1,
+        image: './mission-selector-app/media/hammer/1_ha.jpg'
     },
     {   
         table: 2,
         type: "Heavy",
-        number: 31,
-        image: './mission-selector-app/media/hammer/31_ha.png'
+        number: 2,
+        image: './mission-selector-app/media/hammer/2_ha.jpg'
     },
     {   
         table: 3,
         type: "Medium",
         number: 3,
-        image: './mission-selector-app/media/hammer/3_ha.png'
+        image: './mission-selector-app/media/hammer/3_ha.jpg'
     },
     {   
         table: 4,
         type: "Medium",
-        number: 7,
-        image: './mission-selector-app/media/hammer/7_ha.png'
+        number: 4,
+        image: './mission-selector-app/media/hammer/4_5_ha.jpg'
     },
     {   
         table: 5,
         type: "Medium",
-        number: 7,
-        image: './mission-selector-app/media/hammer/7_ha.png'
+        number: 5,
+        image: './mission-selector-app/media/hammer/4_5_ha.jpg'
     },
     {   
         table: 6,
         type: "Medium",
-        number: 15,
-        image: './mission-selector-app/media/hammer/15_ha.png'
+        number: 6,
+        image: './mission-selector-app/media/hammer/6_ha.jpg'
     },
     {   
         table: 7,
         type: "Light",
-        number: 39,
-        image: './mission-selector-app/media/hammer/39_ha.png'
+        number: 7,
+        image: './mission-selector-app/media/hammer/7_ha.jpg'
     },
     {   
         table: 8,
         type: "Light",
-        number: 47,
-        image: './mission-selector-app/media/hammer/47_ha.png'
+        number: 8,
+        image: './mission-selector-app/media/hammer/8_ha.jpg'
     }
     
 ]

@@ -1,6 +1,6 @@
-import {teamsTournament, warmasterTournament} from "../constants/constants";
+import {teamsTournament, teamsAllDeploymentsTournament} from "../constants/constants";
 
-export const tournamentTypes = [teamsTournament, warmasterTournament]
+export const tournamentTypes = [teamsTournament, teamsAllDeploymentsTournament]
 
 
 export const isSinglesTournament = (tournamentType) => tournamentType.singles;

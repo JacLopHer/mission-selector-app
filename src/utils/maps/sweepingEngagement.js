@@ -2,59 +2,39 @@ export const sweepingEngagementMaps = [
     { 
         table: 1,
         type: "Medium",
-        number: 57,
-        image: './mission-selector-app/media/sweeping/57_se.png'
-    }
-    //Only one map for warmaster
-   /*
-    { 
-        table: 1,
-        type: "Heavy",
-        number: 20,
-        image: './mission-selector-app/media/sweeping/20_se.png'
+        number: 1,
+        image: './mission-selector-app/media/sweeping/1_se.jpg'
     },
     { 
         table: 2,
         type: "Heavy",
-        number: 24,
-        image: './mission-selector-app/media/sweeping/24_se.png'
+        number: 2,
+        image: './mission-selector-app/media/sweeping/2_se.jpg'
     },
     { 
         table: 3,
-        type: "Medium",
-        number: 8,
-        image: './mission-selector-app/media/sweeping/8_se.png'
+        type: "Light",
+        number: 3,
+        image: './mission-selector-app/media/sweeping/3_se.jpg'
     },
     { 
         table: 4,
         type: "Medium",
-        number: 8,
-        image: './mission-selector-app/media/sweeping/8_se.png'
+        number: 4,
+        image: './mission-selector-app/media/sweeping/4_se.jpg'
     },
     { 
         table: 5,
-        type: "Medium",
-        number: 12,
-        image: './mission-selector-app/media/sweeping/12_se.png'
+        type: "Heavy",
+        number: 5,
+        image: './mission-selector-app/media/sweeping/5_se.jpg'
     },
     { 
         table: 6,
-        type: "Medium",
-        number: 16,
-        image: './mission-selector-app/media/sweeping/16_se.png'
-    },
-    { 
-        table: 7,
         type: "Light",
-        number: 36,
-        image: './mission-selector-app/media/sweeping/36_se.png'
-    },
-    { 
-        table: 8,
-        type: "Light",
-        number: 40,
-        image: './mission-selector-app/media/sweeping/40_se.png'
-    }*/
+        number: 6,
+        image: './mission-selector-app/media/sweeping/6_se.jpg'
+    }
 ]
 
 export const sweepingEngagementBattleMapsAlpine = [

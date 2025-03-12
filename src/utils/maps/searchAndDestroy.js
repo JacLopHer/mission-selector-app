@@ -2,50 +2,50 @@ export const searchAndDestroyMaps = [
     { 
         table: 1,
         type: "Heavy",
-        number: 25,
-        image: './mission-selector-app/media/search/25_sd.png'
+        number: 1,
+        image: './mission-selector-app/media/search/1_sd.jpg'
     },
     { 
         table: 2,
         type: "Heavy",
-        number: 29,
-        image: './mission-selector-app/media/search/29_sd.png'
+        number: 2,
+        image: './mission-selector-app/media/search/2_sd.jpg'
     },
     { 
         table: 3,
         type: "Medium",
-        number: 1,
-        image: './mission-selector-app/media/search/1_sd.png'
+        number: 3,
+        image: './mission-selector-app/media/search/3_sd.jpg'
     },
     { 
         table: 4,
         type: "Medium",
-        number: 1,
-        image: './mission-selector-app/media/search/1_sd.png'
+        number: 4,
+        image: './mission-selector-app/media/search/4_5_sd.jpg'
     },
     { 
         table: 5,
         type: "Medium",
-        number: 9,
-        image: './mission-selector-app/media/search/9_sd.png'
+        number: 5,
+        image: './mission-selector-app/media/search/4_5_sd.jpg'
     },
     { 
         table: 6,
         type: "Medium",
-        number: 13,
-        image: './mission-selector-app/media/search/13_sd.png'
+        number: 6,
+        image: './mission-selector-app/media/search/6_sd.jpg'
     },
     { 
         table: 7,
         type: "Light",
-        number: 41,
-        image: './mission-selector-app/media/search/41_sd.png'
+        number: 7,
+        image: './mission-selector-app/media/search/7_sd.jpg'
     },
     { 
         table: 8,
         type: "Light",
-        number: 45,
-        image: './mission-selector-app/media/search/45_sd.png'
+        number: 8,
+        image: './mission-selector-app/media/search/8_sd.jpg'
     }
    
 ]
