@@ -1,8 +1,10 @@
 
-import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta, tippingPoint, sweepingEngagement, alpineCup } from './../constants/constants';
+import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta, tippingPoint, sweepingEngagement, alpineCup, teamsAllDeployments, dawnOfWar } from './../constants/constants';
 
 export const missions = (tournamentType) => {
   switch(tournamentType.name){
+    case teamsAllDeployments:
+      return teamAllMissions;
     case teams:
       return teamMissions;
     case talavera2024:
@@ -237,6 +239,63 @@ const teamMissions = [
       missionRule: "Inspired Leadership",
       deployment: "Crucible of Battle",
     },
+];
+
+const teamAllMissions = [
+  {
+    round: 1,
+    primaryMission: "Supply drop",
+    missionRule: "Smoke and Mirrors",
+    deployment: "Hammer & Anvil",
+  },
+  {
+    round: 2,
+    primaryMission: "Linchpin",
+    missionRule: "Fog of War",
+    deployment: "Tipping Point",
+  },
+  {
+    round: 3,
+    primaryMission: "Purge the Foe",
+    missionRule: "Smoke and Mirrors",
+    deployment: "Tipping Point",
+  },
+  {
+    round: 4,
+    primaryMission: "Linchpin",
+    missionRule: "Raise Banners",
+    deployment: "Search & Destroy",
+  },
+  {
+    round: 5,
+    primaryMission: "Take and Hold",
+    missionRule: "Hidden Supplies",
+    deployment: "Search & Destroy",
+  },
+  {
+    round: 6,
+    primaryMission: "The Ritual",
+    missionRule: "Swift Action",
+    deployment: "Crucible of Battle",
+  },
+  {
+    round: 7,
+    primaryMission: "Scorched Earth",
+    missionRule: "Inspired Leadership",
+    deployment: "Crucible of Battle",
+  },
+  {
+    round: 8,
+    primaryMission: "Burden of trust",
+    missionRule: "Prepared Positions",
+    deployment: dawnOfWar,
+  },
+  {
+    round: 9,
+    primaryMission: "Terraform",
+    missionRule: "Stalwarts",
+    deployment: crucibleOfBatle,
+  },
 ];
 
 const warmasterMissions = [

@@ -7,12 +7,14 @@ export const vitoria = "Vitoria"
 export const talavera2024 = "Talavera 2024"
 export const campingNauta= "Camping Nauta";
 export const alpineCup = "Alpine Cup";
+export const teamsAllDeployments = "Teams with all deployments";
 //deployments
 export const searchAndDestroy = "Search & Destroy";
 export const hammerAndAnvil = 'Hammer & Anvil';
 export const crucibleOfBatle = 'Crucible of Battle';
 export const sweepingEngagement = 'Sweeping Engagement';
 export const tippingPoint = 'Tipping Point';
+export const dawnOfWar = 'Dawn of War';
 //Missions
 export const takeAndHold = 'Take & Hold';
 export const ritual = 'Ritual';
@@ -24,3 +26,5 @@ export const teamsTournament = {name: teams, singles: false};
 export const campingNautaTournament = {name: campingNauta, singles: true};
 export const warmasterTournament = {name: warmaster, singles: true};
 export const alpineCupTournament = {name: alpineCup, singles: false};
+//Tournaments
+export const teamsAllDeploymentsTournament = {name: teamsAllDeployments, singles: false};

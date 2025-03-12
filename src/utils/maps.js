@@ -1,5 +1,6 @@
-import { alpineCup, assemble2025, campingNauta, crucibleOfBatle, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
+import { alpineCup, assemble2025, campingNauta, crucibleOfBatle, dawnOfWar, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
 import { crucibleOfBattleMaps, crucibleOfBattleMapsAlpine, crucibleOfBattleMapsTalavera, crucibleOfBattleMapsVitoria } from "./maps/crucible";
+import { dawnOfWarOfBattleMaps } from "./maps/dawnOfWar";
 import { hammerAndAnvilBattleMapsAlpine, hammerAndAnvilMaps, hammerAndAnvilMapsVitoria } from "./maps/hammerAndAnvil";
 import { searchAndDestroyBattleMapsAlpine, searchAndDestroyMaps, searchAndDestroyMapsTalavera, searchAndDestroyMapsVitoria } from "./maps/searchAndDestroy";
 import { sweepingEngagementBattleMapsAlpine, sweepingEngagementMaps } from "./maps/sweepingEngagement";
@@ -45,6 +46,8 @@ const getMapsForAssemblePerDeployment = (deployment, maps) => deployment === cru
 //generic
 const getMapsForDeployment = (deployment) => {
     switch (deployment) {
+        case dawnOfWar:
+            return dawnOfWarOfBattleMaps;
         case searchAndDestroy:
             return searchAndDestroyMaps;
         case hammerAndAnvil:

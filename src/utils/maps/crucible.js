@@ -2,50 +2,50 @@ export const crucibleOfBattleMaps = [
     { 
         table: 1,        
         type: "Heavy",
-        number: 18,
-        image: './mission-selector-app/media/crucible/18_cb.png'
+        number: 1,
+        image: './mission-selector-app/media/crucible/1_cb.jpg'
     },
     { 
         table: 2,
         type: "Heavy",
-        number: 26,
-        image: './mission-selector-app/media/crucible/26_cb.png'
+        number: 2,
+        image: './mission-selector-app/media/crucible/2_cb.jpg'
     },
     { 
         table: 3,
         type: "Medium",
-        number: 2,
-        image: './mission-selector-app/media/crucible/2_cb.png'
+        number: 3,
+        image: './mission-selector-app/media/crucible/3_cb.jpg'
     },
     { 
         table: 4,
         type: "Medium",
-        number: 10,
-        image: './mission-selector-app/media/crucible/10_cb.png'
+        number: 4,
+        image: './mission-selector-app/media/crucible/4_5_cb.jpg'
     },
     { 
         table: 5,
         type: "Medium",
-        number: 10,
-        image: './mission-selector-app/media/crucible/10_cb.png'
+        number: 5,
+        image: './mission-selector-app/media/crucible/4_5_cb.jpg'
     },
     { 
         table: 6,
         type: "Medium",
-        number: 14,
-        image: './mission-selector-app/media/crucible/14_cb.png'
+        number: 6,
+        image: './mission-selector-app/media/crucible/6_cb.jpg'
     },
     { 
         table: 7,
         type: "Light",
-        number: 34,
-        image: './mission-selector-app/media/crucible/34_cb.png'
+        number: 7,
+        image: './mission-selector-app/media/crucible/7_cb.jpg'
     },
     { 
         table: 8,
         type: "Light",
-        number: 42,
-        image: './mission-selector-app/media/crucible/42_cb.png'
+        number: 8,
+        image: './mission-selector-app/media/crucible/8_cb.jpg'
     }
     
 ] 
