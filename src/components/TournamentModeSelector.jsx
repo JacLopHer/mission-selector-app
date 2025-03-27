@@ -2,9 +2,8 @@ import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { tournamentTypes } from '../utils/tournamentTypes';
 import MissionContext from '../MissionContext';
-import { List, ListItem, Button } from '@mui/material';
-import { StyledContainer, StyledTitle } from './StyledTitle';
-import classes from '../styles/MissionSelector.module.scss'; 
+import { List, ListItem, Button, AppBar, Toolbar, Typography } from '@mui/material';
+import classes from '../styles/MissionSelector.module.scss';
 
 const TournamentModeSelector = () => {
     const { setSelectedTournamentType } = useContext(MissionContext);
@@ -14,12 +13,22 @@ const TournamentModeSelector = () => {
         setSelectedTournamentType(tournamentType);
         navigate('/select-mission');
     };
+
     return (
-        <StyledContainer>
-            <StyledTitle variant="h4">Tournament</StyledTitle>
+        <div>
+            {/* Barra Superior */}
+            <AppBar position="static">
+                <Toolbar>
+                    <Typography variant="h6" sx={{ flexGrow: 1, textAlign: 'center' }}>
+                        Select Tournament
+                    </Typography>
+                </Toolbar>
+            </AppBar>
+
+            {/* Contenido */}
             <List sx={{ marginTop: 2 }}>
                 {tournamentTypes.map((type, index) => (
-                    <ListItem key={index} sx={{ width: '100%' }}> {/* Asegura que los ListItems sean del 100% de ancho */}
+                    <ListItem key={index} sx={{ width: '100%' }}>
                         <Button
                             className={classes.button}
                             onClick={() => handleSelectTournamentType(type)}
@@ -30,8 +39,8 @@ const TournamentModeSelector = () => {
                     </ListItem>
                 ))}
             </List>
-        </StyledContainer>
+        </div>
     );
-}
+};
 
 export default TournamentModeSelector;

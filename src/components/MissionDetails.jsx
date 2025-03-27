@@ -1,13 +1,15 @@
 import React, { useContext, useState } from 'react';
 import MissionContext from '../MissionContext';
 import { useNavigate } from 'react-router-dom';
-import { Typography, Button, Card, CardMedia, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper } from '@mui/material';
+import { Typography, Button, Card, CardMedia, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper, AppBar, Toolbar, IconButton } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ShuffleIcon from '@mui/icons-material/Shuffle'; // Icono para randomizar
 import { StyledContainer, StyledTitle } from './StyledTitle';
 import classes from '../styles/MissionSelector.module.scss'; // Asegúrate de crear este archivo CSS
 import { LazyImage } from './LazyImage';
 
 const MissionDetails = () => {
-  const { selectedMission, selectedMap, selectedTournamentType } = useContext(MissionContext);
+  const { selectedMission, selectedMap, selectedTournamentType, setSelectedMission } = useContext(MissionContext);
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
@@ -19,11 +21,32 @@ const MissionDetails = () => {
   const handleGoBack = () =>
     selectedTournamentType.singles ? navigate('/select-mission') : navigate(-1);
 
+  const handleRandomSelect = () => {
+    // Lógica para seleccionar una misión aleatoria (esto depende de cómo gestiones las misiones)
+    const randomMission = selectedTournamentType.missions[Math.floor(Math.random() * selectedTournamentType.missions.length)];
+    setSelectedMission(randomMission);
+    navigate('/mission-details');
+  };
+
   return (
     <div>
-      <StyledContainer style={{ marginBottom: '0.5rem' }}>
-        <StyledTitle variant="h4">Mission Details</StyledTitle>
-      </StyledContainer>
+      {/* Barra Superior */}
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton edge="start" color="inherit" onClick={handleGoBack}>
+            <ArrowBackIcon />
+          </IconButton>
+          <Typography variant="h6" sx={{ flexGrow: 1, textAlign: 'center' }}>
+            Mission Details
+          </Typography>
+          {/* Botón para Randomizar con ícono */}
+          <IconButton color="inherit" onClick={handleRandomSelect}>
+            <ShuffleIcon />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+
+      {/* Contenido */}
       <Typography variant="body1"><strong>Mission Round:</strong> {selectedMission.round}</Typography>
       <Typography variant="body1"><strong>Primary Mission:</strong> {selectedMission.primaryMission}</Typography>
       <Typography variant="body1"><strong>Mission Rule:</strong> {selectedMission.missionRule}</Typography>
@@ -54,10 +77,6 @@ const MissionDetails = () => {
           </Button>
         </DialogActionsWrapper>
       </Dialog>
-
-      <Button onClick={handleGoBack} fullWidth className={classes.backButton}>
-        Go Back
-      </Button>
     </div>
   );
 };
