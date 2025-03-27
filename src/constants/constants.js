@@ -21,6 +21,16 @@ export const ritual = 'Ritual';
 export const terraform = 'Terraform';
 export const linchpin = 'Linchpin';
 export const burdenOfTrust = 'Burden of Trust'
+export const supplyDrop = "Supply Drop";
+export const scorchedEarth = "Scorched Earth";
+//Mision rules
+export const smokeAndMirrors = "Smoke and Mirrors";
+export const stalwarts = "Stalwarts";
+export const swiftAction = "Swift Action";
+export const inspiredLeadership = "Inspired Leadership";
+export const raiseBanners = "Raise Banners";
+export const fogOfWar = "Fog of War";
+export const hiddenSupplies = "Hidden Supplies";
 //Tournaments
 export const teamsTournament = {name: teams, singles: false};
 export const campingNautaTournament = {name: campingNauta, singles: true};

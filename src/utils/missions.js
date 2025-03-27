@@ -1,12 +1,12 @@
 
-import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta, tippingPoint, sweepingEngagement, alpineCup, teamsAllDeployments, dawnOfWar } from './../constants/constants';
+import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta, tippingPoint, sweepingEngagement, alpineCup, teamsAllDeployments, dawnOfWar, supplyDrop, smokeAndMirrors, ritual, stalwarts, terraform, swiftAction, scorchedEarth, inspiredLeadership, takeAndHold, raiseBanners, linchpin, fogOfWar, hiddenSupplies } from './../constants/constants';
 
 export const missions = (tournamentType) => {
   switch(tournamentType.name){
     case teamsAllDeployments:
       return teamAllMissions;
     case teams:
-      return teamMissions;
+      return wtc2025;
     case talavera2024:
       return talaveraMissions;
     case vitoria:
@@ -17,45 +17,55 @@ export const missions = (tournamentType) => {
       return assemble2025Missions;
     case campingNauta:
       return campingNautaMissions;
-    case alpineCup:
-      return alpineCupMissions;
     default:
       return warmasterMissions;
   }  
 } 
 
 
-const alpineCupMissions = [
+const wtc2025 = [
   {
     round: 1,
-    primaryMission: "Linchpin",
-    missionRule: "Fog of war",
+    primaryMission: supplyDrop,
+    missionRule: smokeAndMirrors,
     deployment: hammerAndAnvil,
   },
   {
     round: 2,
-    primaryMission: "Scorched Earth",
-    missionRule: "Swift action",
-    deployment: searchAndDestroy,
+    primaryMission: ritual,
+    missionRule: stalwarts,
+    deployment: hammerAndAnvil,
   },
   {
     round: 3,
-    primaryMission: "Purge the foe",
-    missionRule: "Raise Banners",
+    primaryMission: terraform,
+    missionRule: swiftAction,
     deployment: crucibleOfBatle,
   },
   {
     round: 4,
-    primaryMission: "Burden of Trust",
-    missionRule: "Inspired leadership",
-    deployment: tippingPoint,
+    primaryMission: scorchedEarth,
+    missionRule: inspiredLeadership,
+    deployment: crucibleOfBatle,
   },
   {
     round: 5,
-    primaryMission: "Take and Hold",
-    missionRule: "Smoke and Mirrors",
-    deployment: sweepingEngagement,
-  }
+    primaryMission: takeAndHold,
+    missionRule: raiseBanners,
+    deployment: tippingPoint,
+  },
+  {
+    round: 6,
+    primaryMission: linchpin,
+    missionRule: fogOfWar,
+    deployment: tippingPoint,
+  },
+  {
+    round: 7,
+    primaryMission: takeAndHold,
+    missionRule: hiddenSupplies,
+    deployment: searchAndDestroy,
+  },
 ]
 
 const talaveraMissions = [
@@ -194,51 +204,6 @@ const freakWarsMissions =  [
     missionRule: "Inspired Leadership",
     deployment: "Crucible of Battle",
   },
-];
-
-const teamMissions = [
-    {
-      round: 1,
-      primaryMission: "Supply drop",
-      missionRule: "Smoke and Mirrors",
-      deployment: "Hammer & Anvil",
-    },
-    {
-      round: 2,
-      primaryMission: "Linchpin",
-      missionRule: "Fog of War",
-      deployment: "Tipping Point",
-    },
-    {
-      round: 3,
-      primaryMission: "Purge the Foe",
-      missionRule: "Smoke and Mirrors",
-      deployment: "Tipping Point",
-    },
-    {
-      round: 4,
-      primaryMission: "Linchpin",
-      missionRule: "Raise Banners",
-      deployment: "Search & Destroy",
-    },
-    {
-      round: 5,
-      primaryMission: "Take and Hold",
-      missionRule: "Hidden Supplies",
-      deployment: "Search & Destroy",
-    },
-    {
-      round: 6,
-      primaryMission: "The Ritual",
-      missionRule: "Swift Action",
-      deployment: "Crucible of Battle",
-    },
-    {
-      round: 7,
-      primaryMission: "Scorched Earth",
-      missionRule: "Inspired Leadership",
-      deployment: "Crucible of Battle",
-    },
 ];
 
 const teamAllMissions = [
