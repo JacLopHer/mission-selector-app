@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import MissionContext from '../MissionContext';
 import { useNavigate } from 'react-router-dom';
-import { Typography, Button, Card, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper, AppBar, Toolbar, IconButton } from '@mui/material';
+import { Typography, Button, Card, CardActions, Dialog, DialogContent, DialogActions as DialogActionsWrapper, AppBar, Toolbar, IconButton, Box } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { LazyImage } from './LazyImage';
 
@@ -34,11 +34,11 @@ const MissionDetails = () => {
       </AppBar>
 
       {/* Contenido */}
-      <Typography variant="body1"><strong>Mission Round:</strong> {selectedMission.round}</Typography>
-      <Typography variant="body1"><strong>Primary Mission:</strong> {selectedMission.primaryMission}</Typography>
-      <Typography variant="body1"><strong>Mission Rule:</strong> {selectedMission.missionRule}</Typography>
-      <Typography variant="body1"><strong>Deployment:</strong> {selectedMission.deployment}</Typography>
-
+      <Box display="flex" justifyContent="space-between" sx={{marginTop: 1}}>
+        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center" }}>{selectedMission.primaryMission}</Typography>
+        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center" }}>{selectedMission.deployment}</Typography>
+        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center" }}>{selectedMission.missionRule}</Typography>
+      </Box>
       <Card sx={{ marginTop: 2 }}>
         <LazyImage
           src={selectedMap.image}
