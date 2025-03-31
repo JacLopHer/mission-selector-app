@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mission-selector-app/static/css/main.52262ae0.css",
-    "main.js": "/mission-selector-app/static/js/main.639cad6e.js",
+    "main.js": "/mission-selector-app/static/js/main.76727d78.js",
     "static/js/453.6a0655f2.chunk.js": "/mission-selector-app/static/js/453.6a0655f2.chunk.js",
     "static/media/exo-2-latin-400-normal.woff": "/mission-selector-app/static/media/exo-2-latin-400-normal.93e691435fef9c469140.woff",
     "static/media/exo-2-latin-ext-400-normal.woff": "/mission-selector-app/static/media/exo-2-latin-ext-400-normal.4ee0866dc1cf9d54de1c.woff",
@@ -15,11 +15,11 @@
     "static/media/exo-2-vietnamese-400-normal.woff2": "/mission-selector-app/static/media/exo-2-vietnamese-400-normal.3ee4afa0890c3b85b57b.woff2",
     "index.html": "/mission-selector-app/index.html",
     "main.52262ae0.css.map": "/mission-selector-app/static/css/main.52262ae0.css.map",
-    "main.639cad6e.js.map": "/mission-selector-app/static/js/main.639cad6e.js.map",
+    "main.76727d78.js.map": "/mission-selector-app/static/js/main.76727d78.js.map",
     "453.6a0655f2.chunk.js.map": "/mission-selector-app/static/js/453.6a0655f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52262ae0.css",
-    "static/js/main.639cad6e.js"
+    "static/js/main.76727d78.js"
   ]
 }
