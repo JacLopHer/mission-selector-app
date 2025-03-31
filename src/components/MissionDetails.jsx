@@ -34,10 +34,10 @@ const MissionDetails = () => {
       </AppBar>
 
       {/* Contenido */}
-      <Box display="flex" justifyContent="space-between" sx={{marginTop: 1}}>
-        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center" }}>{selectedMission.primaryMission}</Typography>
-        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center" }}>{selectedMission.deployment}</Typography>
-        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center" }}>{selectedMission.missionRule}</Typography>
+      <Box display="flex" justifyContent="space-between" sx={{marginTop: 1}} gap={2} alignContent={'center'}>
+        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center", just: 'center', width: '33%' }}>{selectedMission.primaryMission}</Typography>
+        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center", width: '33%' }}>{selectedMission.deployment}</Typography>
+        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center", width: '33%' }}>{selectedMission.missionRule}</Typography>
       </Box>
       <Card sx={{ marginTop: 2 }}>
         <LazyImage
