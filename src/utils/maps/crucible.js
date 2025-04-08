@@ -162,3 +162,42 @@ export const crucibleOfBattleMapsAlpine = [
     }
 
 ]
+
+export const crucibleOfBattleMapsForMollerusa = [
+    { 
+        table: 1,        
+        type: "Heavy",
+        number: 1,
+        image: './mission-selector-app/media/crucible/2_cb.jpg'
+    },
+    { 
+        table: 2,        
+        type: "Heavy",
+        number: 2,
+        image: './mission-selector-app/media/crucible/2_cb.jpg'
+    },
+    { 
+        table: 3,
+        type: "Medium",
+        number: 3,
+        image: './mission-selector-app/media/crucible/6_cb.jpg'
+    },
+    { 
+        table: 4,
+        type: "Medium",
+        number: 4,
+        image: './mission-selector-app/media/crucible/6_cb.jpg'
+    },
+    { 
+        table: 5,
+        type: "Light",
+        number: 5,
+        image: './mission-selector-app/media/crucible/7_cb.jpg'
+    },
+    { 
+        table: 6,
+        type: "Light",
+        number: 6,
+        image: './mission-selector-app/media/crucible/7_cb.jpg'
+    }
+] 

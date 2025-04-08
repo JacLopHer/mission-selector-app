@@ -1,8 +1,8 @@
-import { alpineCup, assemble2025, campingNauta, crucibleOfBatle, dawnOfWar, freakWars, hammerAndAnvil, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
-import { crucibleOfBattleMaps, crucibleOfBattleMapsAlpine, crucibleOfBattleMapsTalavera, crucibleOfBattleMapsVitoria } from "./maps/crucible";
+import { alpineCup, assemble2025, campingNauta, crucibleOfBatle, dawnOfWar, freakWars, hammerAndAnvil, mollerussa, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
+import { crucibleOfBattleMaps, crucibleOfBattleMapsAlpine, crucibleOfBattleMapsForMollerusa, crucibleOfBattleMapsTalavera, crucibleOfBattleMapsVitoria } from "./maps/crucible";
 import { dawnOfWarOfBattleMaps } from "./maps/dawnOfWar";
-import { hammerAndAnvilBattleMapsAlpine, hammerAndAnvilMaps, hammerAndAnvilMapsVitoria } from "./maps/hammerAndAnvil";
-import { searchAndDestroyBattleMapsAlpine, searchAndDestroyMaps, searchAndDestroyMapsTalavera, searchAndDestroyMapsVitoria } from "./maps/searchAndDestroy";
+import { hammerAndAnvilBattleMapsAlpine, hammerAndAnvilMaps, hammerAndAnvilMapsForMollerusa, hammerAndAnvilMapsVitoria } from "./maps/hammerAndAnvil";
+import { searchAndDestroyBattleMapsAlpine, searchAndDestroyMaps, searchAndDestroyMapsForMollerusa, searchAndDestroyMapsTalavera, searchAndDestroyMapsVitoria } from "./maps/searchAndDestroy";
 import { sweepingEngagementBattleMapsAlpine, sweepingEngagementMaps } from "./maps/sweepingEngagement";
 import { tippingPointBattleMapsAlpine, tippingPointMaps, tippingPointMapsTalavera } from "./maps/tippingPoint";
 import { warmasterMaps } from "./maps/warmaster";
@@ -21,6 +21,8 @@ export const maps =  ({deployment, round}, selectedTournamentType) => {
 
 const getTournamentMaps = (selectedTournamentType, round, deployment) => {
     switch(selectedTournamentType) {
+        case mollerussa:
+            return getMapsForDeploymentMollerusa(deployment);
         case vitoria:
             return getMapsForDeploymentVitoria(deployment);
         case talavera2024:
@@ -97,7 +99,6 @@ const getMapsForDeploymentVitoria = (deployment) => {
 
 
 //For Talavera
-
 const getMapsForDeploymentTalavera = (deployment) => {
     switch (deployment) {
         case searchAndDestroy:
@@ -110,6 +111,20 @@ const getMapsForDeploymentTalavera = (deployment) => {
             return [];
     }
 }
+
+
+//For Mollerusa 2025
+const getMapsForDeploymentMollerusa = (deployment) => {
+    switch(deployment) {
+        case searchAndDestroy:
+            return searchAndDestroyMapsForMollerusa;
+        case hammerAndAnvil:
+            return hammerAndAnvilMapsForMollerusa;
+        case crucibleOfBatle:
+            return crucibleOfBattleMapsForMollerusa
+    }
+}
+
 //filters the 2 maps decided by the organization for 6man teams
 const filterMaps = (maps,map1, map2) => maps.filter((map) => map.table === map1 | map.table === map2 ? false : true);
 

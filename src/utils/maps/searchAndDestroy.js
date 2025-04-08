@@ -161,3 +161,42 @@ export const searchAndDestroyBattleMapsAlpine = [
     }
 
 ]
+
+export const searchAndDestroyMapsForMollerusa = [
+    { 
+        table: 1,
+        type: "Heavy",
+        number: 1,
+        image: './mission-selector-app/media/search/1_sd.jpg'
+    },
+    { 
+        table: 2,
+        type: "Heavy",
+        number: 2,
+        image: './mission-selector-app/media/search/1_sd.jpg'
+    },
+    { 
+        table: 3,
+        type: "Medium",
+        number: 3,
+        image: './mission-selector-app/media/search/6_sd.jpg'
+    },
+    { 
+        table: 4,
+        type: "Medium",
+        number: 4,
+        image: './mission-selector-app/media/search/6_sd.jpg'
+    },
+    { 
+        table: 5,
+        type: "Light",
+        number: 5,
+        image: './mission-selector-app/media/search/7_sd.jpg'
+    },
+    { 
+        table: 6,
+        type: "Light",
+        number: 6,
+        image: './mission-selector-app/media/search/7_sd.jpg'
+    },
+]

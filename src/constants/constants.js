@@ -7,6 +7,7 @@ export const vitoria = "Vitoria"
 export const talavera2024 = "Talavera 2024"
 export const campingNauta= "Camping Nauta";
 export const alpineCup = "Alpine Cup";
+export const mollerussa = "Mollerussa";
 export const teamsAllDeployments = "Teams with all deployments";
 //deployments
 export const searchAndDestroy = "Search & Destroy";
@@ -23,6 +24,7 @@ export const linchpin = 'Linchpin';
 export const burdenOfTrust = 'Burden of Trust'
 export const supplyDrop = "Supply Drop";
 export const scorchedEarth = "Scorched Earth";
+export const purgeTheFoe = "Purge the Foe";
 //Mision rules
 export const smokeAndMirrors = "Smoke and Mirrors";
 export const stalwarts = "Stalwarts";
@@ -31,10 +33,13 @@ export const inspiredLeadership = "Inspired Leadership";
 export const raiseBanners = "Raise Banners";
 export const fogOfWar = "Fog of War";
 export const hiddenSupplies = "Hidden Supplies";
+export const rapidEscalation = "Rapid Escalation";
+export const preparedPositions = "Prepared Positions";
 //Tournaments
 export const teamsTournament = {name: teams, singles: false};
 export const campingNautaTournament = {name: campingNauta, singles: true};
 export const warmasterTournament = {name: warmaster, singles: true};
 export const alpineCupTournament = {name: alpineCup, singles: false};
+export const mollerussaTournament = {name:mollerussa, singles:false}
 //Tournaments
 export const teamsAllDeploymentsTournament = {name: teamsAllDeployments, singles: false};

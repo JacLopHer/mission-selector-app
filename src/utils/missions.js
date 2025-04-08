@@ -1,5 +1,5 @@
 
-import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta, tippingPoint, sweepingEngagement, alpineCup, teamsAllDeployments, dawnOfWar, supplyDrop, smokeAndMirrors, ritual, stalwarts, terraform, swiftAction, scorchedEarth, inspiredLeadership, takeAndHold, raiseBanners, linchpin, fogOfWar, hiddenSupplies } from './../constants/constants';
+import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta, tippingPoint, sweepingEngagement, alpineCup, teamsAllDeployments, dawnOfWar, supplyDrop, smokeAndMirrors, ritual, stalwarts, terraform, swiftAction, scorchedEarth, inspiredLeadership, takeAndHold, raiseBanners, linchpin, fogOfWar, hiddenSupplies, purgeTheFoe, rapidEscalation, preparedPositions, mollerussa } from './../constants/constants';
 
 export const missions = (tournamentType) => {
   switch(tournamentType.name){
@@ -17,6 +17,8 @@ export const missions = (tournamentType) => {
       return assemble2025Missions;
     case campingNauta:
       return campingNautaMissions;
+    case mollerussa:
+      return mollerussaMissions
     default:
       return warmasterMissions;
   }  
@@ -66,6 +68,39 @@ const wtc2025 = [
     missionRule: hiddenSupplies,
     deployment: searchAndDestroy,
   },
+]
+
+const mollerussaMissions = [
+  {
+    round: 1,
+    primaryMission: terraform,
+    missionRule: swiftAction,
+    deployment: crucibleOfBatle,
+  },
+  {
+    round: 2,
+    primaryMission: purgeTheFoe,
+    missionRule: rapidEscalation,
+    deployment: crucibleOfBatle,
+  },
+  {
+    round: 3,
+    primaryMission: takeAndHold,
+    missionRule: preparedPositions,
+    deployment: hammerAndAnvil,
+  },
+  {
+    round: 4,
+    primaryMission: linchpin,
+    missionRule: raiseBanners,
+    deployment: searchAndDestroy,
+  },
+  {
+    round: 5,
+    primaryMission: scorchedEarth,
+    missionRule: stalwarts,
+    deployment: searchAndDestroy,
+  }
 ]
 
 const talaveraMissions = [
