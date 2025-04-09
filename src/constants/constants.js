@@ -8,6 +8,7 @@ export const talavera2024 = "Talavera 2024"
 export const campingNauta= "Camping Nauta";
 export const alpineCup = "Alpine Cup";
 export const mollerussa = "Mollerussa";
+export const mollerussaSingles = "Mollerusa Singles";
 export const teamsAllDeployments = "Teams with all deployments";
 //deployments
 export const searchAndDestroy = "Search & Destroy";
@@ -40,6 +41,7 @@ export const teamsTournament = {name: teams, singles: false};
 export const campingNautaTournament = {name: campingNauta, singles: true};
 export const warmasterTournament = {name: warmaster, singles: true};
 export const alpineCupTournament = {name: alpineCup, singles: false};
-export const mollerussaTournament = {name:mollerussa, singles:false}
+export const mollerussaTournament = {name:mollerussa, singles:false};
+export const mollerussaSinglesTournament = {name: mollerussaSingles, singles: true}
 //Tournaments
 export const teamsAllDeploymentsTournament = {name: teamsAllDeployments, singles: false};

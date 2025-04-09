@@ -1,5 +1,5 @@
 
-import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta, tippingPoint, sweepingEngagement, alpineCup, teamsAllDeployments, dawnOfWar, supplyDrop, smokeAndMirrors, ritual, stalwarts, terraform, swiftAction, scorchedEarth, inspiredLeadership, takeAndHold, raiseBanners, linchpin, fogOfWar, hiddenSupplies, purgeTheFoe, rapidEscalation, preparedPositions, mollerussa } from './../constants/constants';
+import { teams, freakWars, assemble2025, hammerAndAnvil, searchAndDestroy, crucibleOfBatle, vitoria, talavera2024, campingNauta, tippingPoint, sweepingEngagement, alpineCup, teamsAllDeployments, dawnOfWar, supplyDrop, smokeAndMirrors, ritual, stalwarts, terraform, swiftAction, scorchedEarth, inspiredLeadership, takeAndHold, raiseBanners, linchpin, fogOfWar, hiddenSupplies, purgeTheFoe, rapidEscalation, preparedPositions, mollerussa, mollerussaSingles } from './../constants/constants';
 
 export const missions = (tournamentType) => {
   switch(tournamentType.name){
@@ -19,6 +19,8 @@ export const missions = (tournamentType) => {
       return campingNautaMissions;
     case mollerussa:
       return mollerussaMissions
+    case mollerussaSingles:
+      return mollerussaSinglesMissions;
     default:
       return warmasterMissions;
   }  
@@ -385,5 +387,38 @@ const campingNautaMissions = [
     primaryMission: "Take and Hold",
     missionRule: "Raise Banners",
     deployment: "Tipping Point",
+  },
+]
+
+const mollerussaSinglesMissions = [
+  {
+    round: 1,
+    primaryMission: terraform,
+    missionRule: swiftAction,
+    deployment: crucibleOfBatle,
+  },
+  {
+    round: 2,
+    primaryMission: purgeTheFoe,
+    missionRule: rapidEscalation,
+    deployment: crucibleOfBatle,
+  },
+  {
+    round: 3,
+    primaryMission: linchpin,
+    missionRule: raiseBanners,
+    deployment: searchAndDestroy,
+  },
+  {
+    round: 4,
+    primaryMission: scorchedEarth,
+    missionRule: stalwarts,
+    deployment: searchAndDestroy,
+  },
+  {
+    round: 5,
+    primaryMission: takeAndHold,
+    missionRule: preparedPositions,
+    deployment: hammerAndAnvil,
   },
 ]

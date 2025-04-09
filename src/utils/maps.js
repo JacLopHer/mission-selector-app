@@ -1,4 +1,4 @@
-import { alpineCup, assemble2025, campingNauta, crucibleOfBatle, dawnOfWar, freakWars, hammerAndAnvil, mollerussa, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
+import { alpineCup, assemble2025, campingNauta, crucibleOfBatle, dawnOfWar, freakWars, hammerAndAnvil, mollerussa, mollerussaSingles, searchAndDestroy, sweepingEngagement, talavera2024, tippingPoint, vitoria, warmaster } from "../constants/constants";
 import { crucibleOfBattleMaps, crucibleOfBattleMapsAlpine, crucibleOfBattleMapsForMollerusa, crucibleOfBattleMapsTalavera, crucibleOfBattleMapsVitoria } from "./maps/crucible";
 import { dawnOfWarOfBattleMaps } from "./maps/dawnOfWar";
 import { hammerAndAnvilBattleMapsAlpine, hammerAndAnvilMaps, hammerAndAnvilMapsForMollerusa, hammerAndAnvilMapsVitoria } from "./maps/hammerAndAnvil";
@@ -14,6 +14,8 @@ export const maps =  ({deployment, round}, selectedTournamentType) => {
             return filterMaps(maps,3,5);
         case assemble2025:
             return getMapsForAssemblePerDeployment(deployment, maps);
+        case mollerussaSingles:
+            return getMapsForMollerussaSingles(maps, deployment);  
         default:
             return maps;
     }
@@ -32,11 +34,14 @@ const getTournamentMaps = (selectedTournamentType, round, deployment) => {
         case warmaster:
             return getMapsForRoundWarmaster(round);
         case campingNauta:
-            return getMapsForRoundWarmaster(round);  
+            return getMapsForRoundWarmaster(round);
         default:
             return getMapsForDeployment(deployment);
     }
 }
+
+//Mollerusa single map
+const getMapsForMollerussaSingles = (maps, deployment) => maps.filter((map) => deployment === hammerAndAnvil ? map.table === 3 : map.table === 6 ); 
 
 //Warmaster maps
 const getMapsForRoundWarmaster = (round) => warmasterMaps.filter(map => map.table === round)
