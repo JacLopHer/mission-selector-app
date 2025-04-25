@@ -405,20 +405,21 @@ const mollerussaSinglesMissions = [
   },
   {
     round: 3,
+    primaryMission: takeAndHold,
+    missionRule: preparedPositions,
+    deployment: hammerAndAnvil,
+  },
+  {
+    round: 4,
     primaryMission: linchpin,
     missionRule: raiseBanners,
     deployment: searchAndDestroy,
   },
   {
-    round: 4,
+    round: 5,
     primaryMission: scorchedEarth,
     missionRule: stalwarts,
     deployment: searchAndDestroy,
   },
-  {
-    round: 5,
-    primaryMission: takeAndHold,
-    missionRule: preparedPositions,
-    deployment: hammerAndAnvil,
-  },
+  
 ]
