@@ -4,6 +4,7 @@ import { tournamentTypes } from '../utils/tournamentTypes';
 import MissionContext from '../MissionContext';
 import { List, ListItem, Button, AppBar, Toolbar, Typography } from '@mui/material';
 import classes from '../styles/MissionSelector.module.scss';
+import { fetchPlayers } from '../services/services';
 
 const TournamentModeSelector = () => {
     const { setSelectedTournamentType } = useContext(MissionContext);
@@ -13,7 +14,8 @@ const TournamentModeSelector = () => {
         setSelectedTournamentType(tournamentType);
         navigate('/select-mission');
     };
-
+    const players = fetchPlayers();
+    console.log(players)
     return (
         <div>
             {/* Barra Superior */}
