@@ -35,9 +35,8 @@ const MissionDetails = () => {
 
       {/* Contenido */}
       <Box display="flex" justifyContent="space-between" sx={{marginTop: 1}} gap={2} alignContent={'center'}>
-        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center", just: 'center', width: '33%' }}>{selectedMission.primaryMission}</Typography>
-        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center", width: '33%' }}>{selectedMission.deployment}</Typography>
-        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center", width: '33%' }}>{selectedMission.missionRule}</Typography>
+        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center", just: 'center', width: '50%' }}>{selectedMission.primaryMission}</Typography>
+        <Typography variant="body1"  component="span" sx={{ backgroundColor: 'black', padding: 1, textAlign: "center", width: '50%' }}>{selectedMission.deployment}</Typography>
       </Box>
       <Card sx={{ marginTop: 2 }}>
         <LazyImage

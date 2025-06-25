@@ -31,44 +31,37 @@ const wtc2025 = [
   {
     round: 1,
     primaryMission: supplyDrop,
-    missionRule: smokeAndMirrors,
-    deployment: hammerAndAnvil,
+    deployment: tippingPoint
   },
   {
     round: 2,
-    primaryMission: ritual,
-    missionRule: stalwarts,
-    deployment: hammerAndAnvil,
+    primaryMission: hiddenSupplies,
+    deployment: hammerAndAnvil
   },
   {
     round: 3,
-    primaryMission: terraform,
-    missionRule: swiftAction,
-    deployment: crucibleOfBatle,
+    primaryMission: takeAndHold,
+      deployment: hammerAndAnvil
   },
   {
     round: 4,
-    primaryMission: scorchedEarth,
-    missionRule: inspiredLeadership,
-    deployment: crucibleOfBatle,
+    primaryMission: terraform,
+    deployment: crucibleOfBatle
   },
   {
     round: 5,
-    primaryMission: takeAndHold,
-    missionRule: raiseBanners,
-    deployment: tippingPoint,
+    primaryMission: scorchedEarth,
+    deployment: crucibleOfBatle
   },
   {
     round: 6,
     primaryMission: linchpin,
-    missionRule: fogOfWar,
-    deployment: tippingPoint,
+    deployment: searchAndDestroy
   },
   {
     round: 7,
     primaryMission: takeAndHold,
-    missionRule: hiddenSupplies,
-    deployment: searchAndDestroy,
+    deployment: searchAndDestroy
   },
 ]
 
@@ -303,57 +296,48 @@ const teamAllMissions = [
 const warmasterMissions = [
   {
     round: 1,
-    primaryMission: "The Ritual",
-    missionRule: "Swift Action",
-    deployment: "Crucible of Battle",
+    primaryMission: supplyDrop,
+    deployment: tippingPoint,
   },
   {
     round: 2,
-    primaryMission: "Linchpin",
-    missionRule: "Fog of War",
-    deployment: "Tipping Point",
+    primaryMission: hiddenSupplies,
+    deployment: hammerAndAnvil,
   },
   {
     round: 3,
-    primaryMission: "Supply Drop",
-    missionRule: "Smoke and Mirrors",
-    deployment: "Hammer & Anvil",
+    primaryMission: takeAndHold,
+    deployment: hammerAndAnvil
   },
   {
     round: 4,
-    primaryMission: "Take and Hold",
-    missionRule: "Hidden Supplies",
-    deployment: "Search & Destroy",
+    primaryMission: terraform,
+    deployment: crucibleOfBatle,
   },
   {
     round: 5,
-    primaryMission: "Purge the Foe",
-    missionRule: "Smoke and Mirrors",
-    deployment: "Tipping Point",
+    primaryMission: scorchedEarth,
+    deployment: crucibleOfBatle,
   },
   {
     round: 6,
-    primaryMission: "Scorched Earth",
-    missionRule: "Inspired Leadership",
-    deployment: "Crucible of Battle",
+    primaryMission: linchpin,
+    deployment: searchAndDestroy,
   },
   {
     round: 7,
-    primaryMission: "Terraform",
-    missionRule: "Swift Action",
-    deployment: "Sweeping Engagement",
+    primaryMission: hiddenSupplies,
+    deployment: searchAndDestroy,
   },
   {
     round: 8,
-    primaryMission: "Burden of Trust",
-    missionRule: "Hidden Supplies",
-    deployment: "Hammer & Anvil",
+    primaryMission: scorchedEarth,
+    deployment: tippingPoint
   },
   {
     round: 9,
-    primaryMission: "Take and Hold",
-    missionRule: "Raise Banners",
-    deployment: "Tipping Point",
+    primaryMission: takeAndHold,
+    deployment: searchAndDestroy,
   },
 ]
 
